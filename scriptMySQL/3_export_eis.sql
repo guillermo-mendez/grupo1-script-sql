@@ -30,7 +30,7 @@
 	`CLAIMPAYMENTNONPAID` DECIMAL(18,2), 
 	`BALANCEAGREEBEROFEBILL` DECIMAL(18,2), 
 	`BALANCEAGREEAFTERBILL` DECIMAL(18,2)
-   )
+   );
 -- ------------------------------------------------------
 --  DDL for Table EIS$ACCOUNTBALANCE_0001
 -- ------------------------------------------------------
@@ -60,7 +60,7 @@
 	`CLAIMPAYMENTNONPAID` DECIMAL(18,2), 
 	`BALANCEAGREEBEROFEBILL` DECIMAL(18,2), 
 	`BALANCEAGREEAFTERBILL` DECIMAL(18,2)
-   )
+   );
 -- ------------------------------------------------------
 --  DDL for Table EIS$ACCOUNTBALANCE_0002
 -- ------------------------------------------------------
@@ -90,7 +90,7 @@
 	`CLAIMPAYMENTNONPAID` DECIMAL(18,2), 
 	`BALANCEAGREEBEROFEBILL` DECIMAL(18,2), 
 	`BALANCEAGREEAFTERBILL` DECIMAL(18,2)
-   )
+   );
 -- ------------------------------------------------------
 --  DDL for Table EIS$ACCOUNTBALANCE_0003
 -- ------------------------------------------------------
@@ -120,7 +120,7 @@
 	`CLAIMPAYMENTNONPAID` DECIMAL(18,2), 
 	`BALANCEAGREEBEROFEBILL` DECIMAL(18,2), 
 	`BALANCEAGREEAFTERBILL` DECIMAL(18,2)
-   )
+   );
 -- ------------------------------------------------------
 --  DDL for Table EIS$ACCOUNTBALANCE_0004
 -- ------------------------------------------------------
@@ -150,7 +150,7 @@
 	`CLAIMPAYMENTNONPAID` DECIMAL(18,2), 
 	`BALANCEAGREEBEROFEBILL` DECIMAL(18,2), 
 	`BALANCEAGREEAFTERBILL` DECIMAL(18,2)
-   )
+   );
 -- ------------------------------------------------------
 --  DDL for Table EIS$ACCOUNTBALANCE_0005
 -- ------------------------------------------------------
@@ -180,7 +180,7 @@
 	`CLAIMPAYMENTNONPAID` DECIMAL(18,2), 
 	`BALANCEAGREEBEROFEBILL` DECIMAL(18,2), 
 	`BALANCEAGREEAFTERBILL` DECIMAL(18,2)
-   )
+   );
 -- ------------------------------------------------------
 --  DDL for Table EIS$ACCOUNTBALANCE_0006
 -- ------------------------------------------------------
@@ -210,7 +210,7 @@
 	`CLAIMPAYMENTNONPAID` DECIMAL(18,2), 
 	`BALANCEAGREEBEROFEBILL` DECIMAL(18,2), 
 	`BALANCEAGREEAFTERBILL` DECIMAL(18,2)
-   )
+   );
 -- ------------------------------------------------------
 --  DDL for Table EIS$ACCOUNTBALANCE_OVFLW
 -- ------------------------------------------------------
@@ -240,7 +240,7 @@
 	`CLAIMPAYMENTNONPAID` DECIMAL(18,2), 
 	`BALANCEAGREEBEROFEBILL` DECIMAL(18,2), 
 	`BALANCEAGREEAFTERBILL` DECIMAL(18,2)
-   )
+   );
 -- ------------------------------------------------------
 --  DDL for Table EIS$ACCOUNTCOLLECT
 -- ------------------------------------------------------
@@ -253,7 +253,7 @@
 	`PAYMENTDATELIMIT` DATETIME COMMENT 'Fecha limite para el pago (> de los estados cuenta', 
 	`MONEYID` DOUBLE COMMENT 'Apuntador a tipos de moneda (Moneda definida contrato)', 
 	`VALUE` DECIMAL(18,2) COMMENT 'Valor total emite cuenta de cobro'
-   ) 
+   ) ;
 
    /* Moved to CREATE TABLE
 COMMENT ON COLUMN `EIS$ACCOUNTCOLLECT`.`ID` IS 'Codigo interno del sistema' */
@@ -281,7 +281,7 @@ COMMENT ON COLUMN `EIS$ACCOUNTCOLLECT`.`VALUE` IS 'Valor total emite cuenta de c
 	`SOCIALLAYERID` DOUBLE, 
 	`GEOLOCATIONID` DOUBLE, 
 	`ISSTANDARD` VARCHAR(1)
-   )
+   );
 -- ------------------------------------------------------
 --  DDL for Table EIS$ADDRESSCHANGE
 -- ------------------------------------------------------
@@ -301,7 +301,7 @@ COMMENT ON COLUMN `EIS$ACCOUNTCOLLECT`.`VALUE` IS 'Valor total emite cuenta de c
 	`GEOLOCATIONID` DOUBLE COMMENT 'Apuntador al Barrio', 
 	`REFERENCEADDRESSID` DOUBLE COMMENT 'Id de la nueva direccion', 
 	`CHANGETYPE` VARCHAR(2)
-   ) 
+   ) ;
 
    /* Moved to CREATE TABLE
 COMMENT ON COLUMN `EIS$ADDRESSCHANGE`.`ID` IS 'Codigo interno del sistema' */
@@ -338,7 +338,7 @@ COMMENT ON COLUMN `EIS$ADDRESSCHANGE`.`REFERENCEADDRESSID` IS 'Id de la nueva di
 	`COLLECTADDRESSTYPEID` DOUBLE COMMENT 'Apuntador a tipos de direccion de cobro', 
 	`COLLECTADDRESS` VARCHAR(150) COMMENT 'Direccion de cobro(email, cuenta banco, direccion, ..)', 
 	`COLLECTADDRESSREFERENCE` DOUBLE COMMENT 'Codigo asociado direccion(ubicacion geografica,banco,..) '
-   ) 
+   ) ;
 
    /* Moved to CREATE TABLE
 COMMENT ON COLUMN `EIS$AGREECOLLECTADDRESS`.`ID` IS 'Codigo interno del sistema' */
@@ -374,7 +374,7 @@ COMMENT ON COLUMN `EIS$AGREECOLLECTADDRESS`.`COLLECTADDRESSREFERENCE` IS 'Codigo
 	`LASTBILLINGDATE` DATETIME, 
 	`NEXTBILLINGDATE` DATETIME, 
 	`BILLINGPERIODICITY` DOUBLE COMMENT 'Periodicidad de facturacion (meses).'
-   ) 
+   ) ;
 
    /* Moved to CREATE TABLE
 COMMENT ON COLUMN `EIS$AGREEMENT`.`BILLINGPERIODICITY` IS 'Periodicidad de facturacion (meses).' */
@@ -401,7 +401,7 @@ COMMENT ON COLUMN `EIS$AGREEMENT`.`BILLINGPERIODICITY` IS 'Periodicidad de factu
 	`BILLPLANID` DOUBLE, 
 	`LASTRATINGDATE` DATETIME, 
 	`NEXTRATINGDATE` DATETIME
-   ) 
+   ) ;
 
    /* Moved to CREATE TABLE
 COMMENT ON COLUMN `EIS$AGREEMENTSERVICE`.`ID` IS 'Codigo interno del sistema' */
@@ -439,7 +439,7 @@ COMMENT ON COLUMN `EIS$AGREEMENTSERVICE`.`STATUSID` IS 'Apuntador a estados, est
 	`FROMDATE` DATETIME, 
 	`TODATE` DATETIME, 
 	`SERVICEID` DOUBLE
-   )
+   );
 -- ------------------------------------------------------
 --  DDL for Table EIS$AGREEMENTSERVICEUSER
 -- ------------------------------------------------------
@@ -458,7 +458,7 @@ COMMENT ON COLUMN `EIS$AGREEMENTSERVICE`.`STATUSID` IS 'Apuntador a estados, est
 	`FROMDATE` DATETIME COMMENT 'Fecha inicia', 
 	`TODATE` DATETIME COMMENT 'Fecha termina', 
 	`STATUSID` DOUBLE COMMENT 'Apuntador a estados, estado de facturacion del servicio'
-   ) 
+   ) ;
 
    /* Moved to CREATE TABLE
 COMMENT ON COLUMN `EIS$AGREEMENTSERVICEUSER`.`ID` IS 'Codigo interno del sistema' */
@@ -499,7 +499,7 @@ COMMENT ON COLUMN `EIS$AGREEMENTSERVICEUSER`.`STATUSID` IS 'Apuntador a estados,
 	`FROMDATE` DATETIME, 
 	`TODATE` DATETIME, 
 	`STATUSID` DOUBLE
-   )
+   );
 -- ------------------------------------------------------
 --  DDL for Table EIS$BILLCYCLE
 -- ------------------------------------------------------
@@ -509,7 +509,7 @@ COMMENT ON COLUMN `EIS$AGREEMENTSERVICEUSER`.`STATUSID` IS 'Apuntador a estados,
 	`COMPANYID` DOUBLE COMMENT 'Apuntador a compania', 
 	`DESCRIPTION` VARCHAR(50), 
 	`STATUS` VARCHAR(1)
-   ) 
+   ) ;
 
    /* Moved to CREATE TABLE
 COMMENT ON COLUMN `EIS$BILLCYCLE`.`ID` IS 'Codigo interno del sistema' */
@@ -534,7 +534,7 @@ COMMENT ON COLUMN `EIS$BILLCYCLE`.`COMPANYID` IS 'Apuntador a compania' */
 	`FINALDATECTLMOVEMENTS` DATETIME COMMENT 'Fecha maxima para registrar movtos al periodo(control)', 
 	`INITDATECTLPAYMENT` DATETIME COMMENT 'Fecha minima para registrar pagos al periodo(control)', 
 	`FINALDATECTLPAYMENT` DATETIME COMMENT 'Fecha maxima para registrar pagos al periodo(control)'
-   ) 
+   ) ;
 
    /* Moved to CREATE TABLE
 COMMENT ON COLUMN `EIS$BILLPERIOD`.`ID` IS 'Codigo interno del sistema' */
@@ -571,7 +571,7 @@ COMMENT ON COLUMN `EIS$BILLPERIOD`.`FINALDATECTLPAYMENT` IS 'Fecha maxima para r
 	`COMPANYID` DOUBLE, 
 	`DESCRIPTION` VARCHAR(50), 
 	`TODATE` DATETIME
-   )
+   );
 -- ------------------------------------------------------
 --  DDL for Table EIS$BILLPLANCHANGE
 -- ------------------------------------------------------
@@ -585,7 +585,7 @@ COMMENT ON COLUMN `EIS$BILLPERIOD`.`FINALDATECTLPAYMENT` IS 'Fecha maxima para r
 	`AGREEMENTID` DOUBLE COMMENT 'Nuevo Contrato', 
 	`PREVIOUSBILLPLANID` DOUBLE COMMENT 'Plan Anterior', 
 	`BILLPLANID` DOUBLE COMMENT 'Nuevo Plan'
-   ) 
+   ) ;
 
    /* Moved to CREATE TABLE
 COMMENT ON COLUMN `EIS$BILLPLANCHANGE`.`ID` IS 'Codigo interno del sistema' */
@@ -616,7 +616,7 @@ COMMENT ON COLUMN `EIS$BILLPLANCHANGE`.`BILLPLANID` IS 'Nuevo Plan' */
 	`FORMULAID` DOUBLE, 
 	`FROMDATE` DATETIME, 
 	`TODATE` DATETIME
-   )
+   );
 -- ------------------------------------------------------
 --  DDL for Table EIS$BILLSTATUS
 -- ------------------------------------------------------
@@ -625,7 +625,7 @@ COMMENT ON COLUMN `EIS$BILLPLANCHANGE`.`BILLPLANID` IS 'Nuevo Plan' */
    (	`ID` DOUBLE COMMENT 'Codigo interno del sistema', 
 	`COMPANYID` DOUBLE COMMENT 'Apuntador a compania', 
 	`STATUSID` DOUBLE COMMENT 'Apuntador a estados'
-   ) 
+   ) ;
 
    /* Moved to CREATE TABLE
 COMMENT ON COLUMN `EIS$BILLSTATUS`.`ID` IS 'Codigo interno del sistema' */
@@ -644,7 +644,7 @@ COMMENT ON COLUMN `EIS$BILLSTATUS`.`STATUSID` IS 'Apuntador a estados' */
 	`COLLECTIONBRANCHID` DOUBLE, 
 	`FROMDATE` DATETIME, 
 	`STATUS` VARCHAR(1)
-   )
+   );
 -- ------------------------------------------------------
 --  DDL for Table EIS$CLAIMOBSERVATION
 -- ------------------------------------------------------
@@ -655,7 +655,7 @@ COMMENT ON COLUMN `EIS$BILLSTATUS`.`STATUSID` IS 'Apuntador a estados' */
 	`DOCUMENTID` DOUBLE COMMENT 'Apuntador a documento de reclamo', 
 	`DOCUMENTDETAILID` DOUBLE COMMENT 'Apuntador a detalle de documento de reclamo', 
 	`OBSERVATION` VARCHAR(1048) COMMENT 'Observacion del reclamo'
-   ) 
+   ) ;
 
    /* Moved to CREATE TABLE
 COMMENT ON COLUMN `EIS$CLAIMOBSERVATION`.`ID` IS 'Codigo interno del sistema' */
@@ -682,7 +682,7 @@ COMMENT ON COLUMN `EIS$CLAIMOBSERVATION`.`OBSERVATION` IS 'Observacion del recla
 	`VALUE` DECIMAL(18,2), 
 	`COUPON#` DOUBLE, 
 	`PROCESSED` VARCHAR(1)
-   )
+   );
 -- ------------------------------------------------------
 --  DDL for Table EIS$CLLCTCNCLTIONBLOCK
 -- ------------------------------------------------------
@@ -698,7 +698,7 @@ COMMENT ON COLUMN `EIS$CLAIMOBSERVATION`.`OBSERVATION` IS 'Observacion del recla
 	`COUPONSPROCESS` INT, 
 	`PROCESSEDTOTALVALUE` DECIMAL(20,2), 
 	`PROCESSED` VARCHAR(1)
-   )
+   );
 -- ------------------------------------------------------
 --  DDL for Table EIS$COLLECTADDRESSCHANGE
 -- ------------------------------------------------------
@@ -714,7 +714,7 @@ COMMENT ON COLUMN `EIS$CLAIMOBSERVATION`.`OBSERVATION` IS 'Observacion del recla
 	`COLLECTADDRESS` VARCHAR(150) COMMENT 'Direccion de cobro(email, cuenta banco, direccion, ..)', 
 	`COLLECTADDRESSREFERENCE` DOUBLE COMMENT 'Codigo asociado direccion(ubicacion geografica,banco,..) ', 
 	`COLLECTADDRESSID` DOUBLE COMMENT 'Apuntador a la nueva direccion de cobro'
-   ) 
+   ) ;
 
    /* Moved to CREATE TABLE
 COMMENT ON COLUMN `EIS$COLLECTADDRESSCHANGE`.`ID` IS 'Codigo interno del sistema' */
@@ -753,7 +753,7 @@ COMMENT ON COLUMN `EIS$COLLECTADDRESSCHANGE`.`COLLECTADDRESSID` IS 'Apuntador a 
 	`COUPONSPROCESS` INT COMMENT 'Numero cupones(Procesado == PaymentCoupons)', 
 	`PROCESSEDTOTALVALUE` DECIMAL(20,2) COMMENT 'Valor total conciliacion(Procesado == ReportedTotalValue)', 
 	`PROCESSED` VARCHAR(1)
-   ) 
+   ) ;
 
    /* Moved to CREATE TABLE
 COMMENT ON COLUMN `EIS$COLLECTCONCILIATION`.`ID` IS 'Codigo interno del sistema' */
@@ -787,7 +787,7 @@ COMMENT ON COLUMN `EIS$COLLECTCONCILIATION`.`PROCESSEDTOTALVALUE` IS 'Valor tota
 	`ADDRESS` VARCHAR(150), 
 	`GEOLOCATIONID` DOUBLE COMMENT 'Apuntador ubicacion geografica', 
 	`CODE` VARCHAR(4) COMMENT 'Codigo sucursal entidad de recaudo'
-   ) 
+   ) ;
 
    /* Moved to CREATE TABLE
 COMMENT ON COLUMN `EIS$COLLECTIONBRANCH`.`ID` IS 'Codigo interno del sistema' */
@@ -809,7 +809,7 @@ COMMENT ON COLUMN `EIS$COLLECTIONBRANCH`.`CODE` IS 'Codigo sucursal entidad de r
 	`NAME` VARCHAR(50) COMMENT 'Nombre entidad de recaudo', 
 	`CODE` VARCHAR(4) COMMENT 'Codigo entidad de recaudo', 
 	`SHORTNAME` VARCHAR(8) COMMENT 'Nombre abreviado entidad de recaudo'
-   ) 
+   ) ;
 
    /* Moved to CREATE TABLE
 COMMENT ON COLUMN `EIS$COLLECTIONORGANIZATION`.`ID` IS 'Codigo interno del sistema' */
@@ -829,7 +829,7 @@ COMMENT ON COLUMN `EIS$COLLECTIONORGANIZATION`.`SHORTNAME` IS 'Nombre abreviado 
    (	`ID` DOUBLE COMMENT 'Codigo interno del sistema', 
 	`COMPANYID` DOUBLE COMMENT 'Apuntador a compania', 
 	`DESCRIPTION` VARCHAR(50) COMMENT 'Descripcion'
-   ) 
+   ) ;
 
    /* Moved to CREATE TABLE
 COMMENT ON COLUMN `EIS$CONCEPT`.`ID` IS 'Codigo interno del sistema' */
@@ -866,7 +866,7 @@ COMMENT ON COLUMN `EIS$CONCEPT`.`DESCRIPTION` IS 'Descripcion' */
 	`TAXVALUE` DECIMAL(18,5) COMMENT 'valor del impuesto', 
 	`DISCOUNTVALUE` DECIMAL(18,5) COMMENT 'Valor de descuento', 
 	`CREATEDATE` DATETIME COMMENT 'Fecha de creacion'
-   ) 
+   ) ;
 
    /* Moved to CREATE TABLE
 COMMENT ON COLUMN `EIS$CONCEPTATTENDEDINVOICE`.`ID` IS 'Codigo interno del sistema' */
@@ -926,7 +926,7 @@ COMMENT ON COLUMN `EIS$CONCEPTATTENDEDINVOICE`.`CREATEDATE` IS 'Fecha de creacio
 	`PRODUCTSUPPLYID` DOUBLE COMMENT 'Apuntador a productos comercializados', 
 	`SERVICEID` DOUBLE COMMENT 'Apuntador a servicio', 
 	`QUANTITY` DOUBLE COMMENT 'Cantidad minima ofrecida'
-   ) 
+   ) ;
 
    /* Moved to CREATE TABLE
 COMMENT ON COLUMN `EIS$CONFIGPRODUCTSUPPLY`.`ID` IS 'Codigo interno del sistema' */
@@ -954,7 +954,7 @@ COMMENT ON COLUMN `EIS$CONFIGPRODUCTSUPPLY`.`QUANTITY` IS 'Cantidad minima ofrec
 	`FROMDATE` DATETIME COMMENT 'Fecha activacion como cliente', 
 	`LEAFNODEID` DOUBLE COMMENT 'Apuntador a cliente(leaf)', 
 	`ROOTNODEID` DOUBLE COMMENT 'Apuntador a cliente(root)'
-   ) 
+   ) ;
 
    /* Moved to CREATE TABLE
 COMMENT ON COLUMN `EIS$CUSTOMER`.`ID` IS 'Codigo interno del sistema' */
@@ -981,7 +981,7 @@ COMMENT ON COLUMN `EIS$CUSTOMER`.`ROOTNODEID` IS 'Apuntador a cliente(root)' */
 	`COMPANYID` DOUBLE COMMENT 'Apuntador a compania', 
 	`CUSTOMERID` DOUBLE COMMENT 'Apuntador a cliente', 
 	`SUBSCRIBERID` DOUBLE COMMENT 'Apuntador a suscriptor'
-   ) 
+   ) ;
 
    /* Moved to CREATE TABLE
 COMMENT ON COLUMN `EIS$CUSTOMERSUBSCRIBER`.`ID` IS 'Codigo interno del sistema' */
@@ -999,7 +999,7 @@ COMMENT ON COLUMN `EIS$CUSTOMERSUBSCRIBER`.`SUBSCRIBERID` IS 'Apuntador a suscri
    (	`ID` DOUBLE COMMENT 'Codigo interno del sistema', 
 	`COMPANYID` DOUBLE COMMENT 'Apuntador a compania', 
 	`DESCRIPTION` VARCHAR(50)
-   ) 
+   ) ;
 
    /* Moved to CREATE TABLE
 COMMENT ON COLUMN `EIS$CUSTOMERTYPE`.`ID` IS 'Codigo interno del sistema' */
@@ -1034,7 +1034,7 @@ COMMENT ON COLUMN `EIS$CUSTOMERTYPE`.`COMPANYID` IS 'Apuntador a compania' */
 	`SPREADINTERESTYPE` DECIMAL(8,5), 
 	`DEFERREDSOURCETYPE` VARCHAR(1), 
 	`ISTHEREEXTRAPAYMENT` VARCHAR(1)
-   )
+   );
 -- ------------------------------------------------------
 --  DDL for Table EIS$DEFERREDAMORTIZE
 -- ------------------------------------------------------
@@ -1045,7 +1045,7 @@ COMMENT ON COLUMN `EIS$CUSTOMERTYPE`.`COMPANYID` IS 'Apuntador a compania' */
 	`SHORTNAME` VARCHAR(8), 
 	`DESCRIPTION` VARCHAR(50), 
 	`FORMULAID` DOUBLE
-   )
+   );
 -- ------------------------------------------------------
 --  DDL for Table EIS$DEFERREDEXTRAPAYMENT
 -- ------------------------------------------------------
@@ -1057,7 +1057,7 @@ COMMENT ON COLUMN `EIS$CUSTOMERTYPE`.`COMPANYID` IS 'Apuntador a compania' */
 	`PAYMENTDATE` DATETIME, 
 	`VALUE` DECIMAL(18,2), 
 	`ISPAYRECEIVED` VARCHAR(1)
-   )
+   );
 -- ------------------------------------------------------
 --  DDL for Table EIS$DEFERREDINTERESTRATE
 -- ------------------------------------------------------
@@ -1069,7 +1069,7 @@ COMMENT ON COLUMN `EIS$CUSTOMERTYPE`.`COMPANYID` IS 'Apuntador a compania' */
 	`INTEREST` DECIMAL(8,3), 
 	`FROMDATE` DATETIME, 
 	`TODATE` DATETIME
-   )
+   );
 -- ------------------------------------------------------
 --  DDL for Table EIS$DEFERREDINTERESTTYPE
 -- ------------------------------------------------------
@@ -1080,7 +1080,7 @@ COMMENT ON COLUMN `EIS$CUSTOMERTYPE`.`COMPANYID` IS 'Apuntador a compania' */
 	`SHORTNAME` VARCHAR(8), 
 	`DESCRIPTION` VARCHAR(50), 
 	`FORMULAID` DOUBLE
-   )
+   );
 -- ------------------------------------------------------
 --  DDL for Table EIS$DEFERREDMOVEMENT
 -- ------------------------------------------------------
@@ -1100,7 +1100,7 @@ COMMENT ON COLUMN `EIS$CUSTOMERTYPE`.`COMPANYID` IS 'Apuntador a compania' */
 	`TAXVALUE` DECIMAL(18,2), 
 	`ISPAYMENTRECEIVED` VARCHAR(1), 
 	`PAYMENT` SMALLINT
-   )
+   );
 -- ------------------------------------------------------
 --  DDL for Table EIS$DEFERREDPLAN
 -- ------------------------------------------------------
@@ -1110,7 +1110,7 @@ COMMENT ON COLUMN `EIS$CUSTOMERTYPE`.`COMPANYID` IS 'Apuntador a compania' */
 	`COMPANYID` DOUBLE, 
 	`DESCRIPTION` VARCHAR(50), 
 	`STATUS` VARCHAR(1)
-   )
+   );
 -- ------------------------------------------------------
 --  DDL for Table EIS$DEFERREDPLANDETAIL
 -- ------------------------------------------------------
@@ -1135,7 +1135,7 @@ COMMENT ON COLUMN `EIS$CUSTOMERTYPE`.`COMPANYID` IS 'Apuntador a compania' */
 	`FROMDATE` DATETIME, 
 	`TODATE` DATETIME, 
 	`STATUS` VARCHAR(1)
-   )
+   );
 -- ------------------------------------------------------
 --  DDL for Table EIS$DEFERREDSUPPORT
 -- ------------------------------------------------------
@@ -1148,7 +1148,7 @@ COMMENT ON COLUMN `EIS$CUSTOMERTYPE`.`COMPANYID` IS 'Apuntador a compania' */
 	`SIGN` VARCHAR(1), 
 	`VALUE` DECIMAL(18,2), 
 	`PRCNTGEOVERDFRRED` DECIMAL(8,5)
-   )
+   );
 -- ------------------------------------------------------
 --  DDL for Table EIS$DOCUMENT_
 -- ------------------------------------------------------
@@ -1172,7 +1172,7 @@ COMMENT ON COLUMN `EIS$CUSTOMERTYPE`.`COMPANYID` IS 'Apuntador a compania' */
 	`MONEYID` DOUBLE, 
 	`VALUE` DECIMAL(18,2), 
 	`STATUS` VARCHAR(1)
-   )
+   );
 -- ------------------------------------------------------
 --  DDL for Table EIS$DOCUMENTDETAIL_
 -- ------------------------------------------------------
@@ -1213,7 +1213,7 @@ COMMENT ON COLUMN `EIS$CUSTOMERTYPE`.`COMPANYID` IS 'Apuntador a compania' */
 	`USERID` DOUBLE, 
 	`CREATEDATE` DATETIME, 
 	`STATUS` VARCHAR(1)
-   )
+   );
 -- ------------------------------------------------------
 --  DDL for Table EIS$DOCUMENTDETAIL_0001
 -- ------------------------------------------------------
@@ -1254,7 +1254,7 @@ COMMENT ON COLUMN `EIS$CUSTOMERTYPE`.`COMPANYID` IS 'Apuntador a compania' */
 	`USERID` DOUBLE, 
 	`CREATEDATE` DATETIME, 
 	`STATUS` VARCHAR(1)
-   )
+   );
 -- ------------------------------------------------------
 --  DDL for Table EIS$DOCUMENTDETAIL_0002
 -- ------------------------------------------------------
@@ -1295,7 +1295,7 @@ COMMENT ON COLUMN `EIS$CUSTOMERTYPE`.`COMPANYID` IS 'Apuntador a compania' */
 	`USERID` DOUBLE, 
 	`CREATEDATE` DATETIME, 
 	`STATUS` VARCHAR(1)
-   )
+   );
 -- ------------------------------------------------------
 --  DDL for Table EIS$DOCUMENTDETAIL_0003
 -- ------------------------------------------------------
@@ -1336,7 +1336,7 @@ COMMENT ON COLUMN `EIS$CUSTOMERTYPE`.`COMPANYID` IS 'Apuntador a compania' */
 	`USERID` DOUBLE, 
 	`CREATEDATE` DATETIME, 
 	`STATUS` VARCHAR(1)
-   )
+   );
 -- ------------------------------------------------------
 --  DDL for Table EIS$DOCUMENTDETAIL_0004
 -- ------------------------------------------------------
@@ -1377,7 +1377,7 @@ COMMENT ON COLUMN `EIS$CUSTOMERTYPE`.`COMPANYID` IS 'Apuntador a compania' */
 	`USERID` DOUBLE, 
 	`CREATEDATE` DATETIME, 
 	`STATUS` VARCHAR(1)
-   )
+   );
 -- ------------------------------------------------------
 --  DDL for Table EIS$DOCUMENTDETAIL_0005
 -- ------------------------------------------------------
@@ -1418,7 +1418,7 @@ COMMENT ON COLUMN `EIS$CUSTOMERTYPE`.`COMPANYID` IS 'Apuntador a compania' */
 	`USERID` DOUBLE, 
 	`CREATEDATE` DATETIME, 
 	`STATUS` VARCHAR(1)
-   )
+   );
 -- ------------------------------------------------------
 --  DDL for Table EIS$DOCUMENTDETAIL_0006
 -- ------------------------------------------------------
@@ -1459,7 +1459,7 @@ COMMENT ON COLUMN `EIS$CUSTOMERTYPE`.`COMPANYID` IS 'Apuntador a compania' */
 	`USERID` DOUBLE, 
 	`CREATEDATE` DATETIME, 
 	`STATUS` VARCHAR(1)
-   )
+   );
 -- ------------------------------------------------------
 --  DDL for Table EIS$DOCUMENTDETAIL_OVFLW
 -- ------------------------------------------------------
@@ -1500,7 +1500,7 @@ COMMENT ON COLUMN `EIS$CUSTOMERTYPE`.`COMPANYID` IS 'Apuntador a compania' */
 	`USERID` DOUBLE, 
 	`CREATEDATE` DATETIME, 
 	`STATUS` VARCHAR(1)
-   )
+   );
 -- ------------------------------------------------------
 --  DDL for Table EIS$DOCUMENTTYPE
 -- ------------------------------------------------------
@@ -1510,7 +1510,7 @@ COMMENT ON COLUMN `EIS$CUSTOMERTYPE`.`COMPANYID` IS 'Apuntador a compania' */
 	`COMPANYID` DOUBLE COMMENT 'Apuntador a compania', 
 	`NAME` VARCHAR(50) COMMENT 'Nombre descriptivo', 
 	`SHORTNAME` VARCHAR(8) COMMENT 'Abreviatura o nombre corto'
-   ) 
+   ) ;
 
    /* Moved to CREATE TABLE
 COMMENT ON COLUMN `EIS$DOCUMENTTYPE`.`ID` IS 'Codigo interno del sistema' */
@@ -1529,7 +1529,7 @@ COMMENT ON COLUMN `EIS$DOCUMENTTYPE`.`SHORTNAME` IS 'Abreviatura o nombre corto'
 	`COMPANYID` DOUBLE, 
 	`FORMULA` VARCHAR(61), 
 	`DESCRIPTION` VARCHAR(50)
-   )
+   );
 -- ------------------------------------------------------
 --  DDL for Table EIS$GEOLOCATION
 -- ------------------------------------------------------
@@ -1539,7 +1539,7 @@ COMMENT ON COLUMN `EIS$DOCUMENTTYPE`.`SHORTNAME` IS 'Abreviatura o nombre corto'
 	`COMPANYID` DOUBLE, 
 	`CITYID` DOUBLE, 
 	`DESCRIPTION` VARCHAR(50)
-   )
+   );
 -- ------------------------------------------------------
 --  DDL for Table EIS$MASTERSTORAGE
 -- ------------------------------------------------------
@@ -1551,7 +1551,7 @@ COMMENT ON COLUMN `EIS$DOCUMENTTYPE`.`SHORTNAME` IS 'Abreviatura o nombre corto'
 	`BILLCYCLEID` DOUBLE, 
 	`BILLPERIODID` DOUBLE, 
 	`STATUS` VARCHAR(1)
-   )
+   );
 -- ------------------------------------------------------
 --  DDL for Table EIS$OPERATION
 -- ------------------------------------------------------
@@ -1561,7 +1561,7 @@ COMMENT ON COLUMN `EIS$DOCUMENTTYPE`.`SHORTNAME` IS 'Abreviatura o nombre corto'
 	`COMPANYID` DOUBLE, 
 	`SHORTNAME` VARCHAR(4), 
 	`DESCRIPTION` VARCHAR(50)
-   )
+   );
 -- ------------------------------------------------------
 --  DDL for Table EIS$PAYMENT
 -- ------------------------------------------------------
@@ -1576,7 +1576,7 @@ COMMENT ON COLUMN `EIS$DOCUMENTTYPE`.`SHORTNAME` IS 'Abreviatura o nombre corto'
 	`MONEYID` DOUBLE, 
 	`VALUE` DECIMAL(18,2), 
 	`CREATEDDATE` DATETIME
-   )
+   );
 -- ------------------------------------------------------
 --  DDL for Table EIS$PAYMENTMETHOD
 -- ------------------------------------------------------
@@ -1586,7 +1586,7 @@ COMMENT ON COLUMN `EIS$DOCUMENTTYPE`.`SHORTNAME` IS 'Abreviatura o nombre corto'
 	`COMPANYID` DOUBLE COMMENT 'Apuntador a compania', 
 	`DESCRIPTION` VARCHAR(50) COMMENT 'Descripcion', 
 	`SHORTNAME` VARCHAR(16)
-   ) 
+   ) ;
 
    /* Moved to CREATE TABLE
 COMMENT ON COLUMN `EIS$PAYMENTMETHOD`.`ID` IS 'Codigo interno del sistema' */
@@ -1602,7 +1602,7 @@ COMMENT ON COLUMN `EIS$PAYMENTMETHOD`.`DESCRIPTION` IS 'Descripcion' */
    (	`ID` DOUBLE COMMENT 'Codigo interno del sistema', 
 	`COMPANYID` DOUBLE COMMENT 'Apuntador a compania', 
 	`DESCRIPTION` VARCHAR(50)
-   ) 
+   ) ;
 
    /* Moved to CREATE TABLE
 COMMENT ON COLUMN `EIS$PRODUCTSUPPLY`.`ID` IS 'Codigo interno del sistema' */
@@ -1611,7 +1611,7 @@ COMMENT ON COLUMN `EIS$PRODUCTSUPPLY`.`COMPANYID` IS 'Apuntador a compania' */
 -- ------------------------------------------------------
 --  DDL for Table EIS$PROJECTION
 -- ------------------------------------------------------
-
+/*
   CREATE GLOBAL TEMPORARY TABLE `EIS$PROJECTION` 
    (	`CAPITAL` DOUBLE, 
 	`QUOTE` DOUBLE, 
@@ -1621,7 +1621,7 @@ COMMENT ON COLUMN `EIS$PRODUCTSUPPLY`.`COMPANYID` IS 'Apuntador a compania' */
 	`INSTALLMENT` DOUBLE, 
 	`BALANCE` DOUBLE, 
 	`RATE` DOUBLE
-   ) ON COMMIT DELETE ROWS
+   ) ON COMMIT DELETE ROWS;*/
 -- ------------------------------------------------------
 --  DDL for Table EIS$REASONSUSPEND
 -- ------------------------------------------------------
@@ -1631,7 +1631,7 @@ COMMENT ON COLUMN `EIS$PRODUCTSUPPLY`.`COMPANYID` IS 'Apuntador a compania' */
 	`COMPANYID` DOUBLE COMMENT 'Apuntador a compania', 
 	`CODE` VARCHAR(16) COMMENT 'codigo de la peticion', 
 	`DESCRIPTION` VARCHAR(100) COMMENT 'Descripcion del motivo de la suspencion'
-   ) 
+   ) ;
 
    /* Moved to CREATE TABLE
 COMMENT ON COLUMN `EIS$REASONSUSPEND`.`ID` IS 'Codigo interno del sistema' */
@@ -1653,7 +1653,7 @@ COMMENT ON COLUMN `EIS$REASONSUSPEND`.`DESCRIPTION` IS 'Descripcion del motivo d
 	`APLICATEDATE` DATETIME, 
 	`DAYS` DOUBLE, 
 	`VALUE` DOUBLE
-   )
+   );
 -- ------------------------------------------------------
 --  DDL for Table EIS$RECHARGEPERCENTAGE
 -- ------------------------------------------------------
@@ -1664,7 +1664,7 @@ COMMENT ON COLUMN `EIS$REASONSUSPEND`.`DESCRIPTION` IS 'Descripcion del motivo d
 	`SERVICEID` DOUBLE, 
 	`PERCENTAGE` DECIMAL(6,3), 
 	`INITIALDATE` DATETIME
-   )
+   );
 -- ------------------------------------------------------
 --  DDL for Table EIS$REFERENCEADDRESS
 -- ------------------------------------------------------
@@ -1678,7 +1678,7 @@ COMMENT ON COLUMN `EIS$REASONSUSPEND`.`DESCRIPTION` IS 'Descripcion del motivo d
 	`ADDRESSTYPEID` DOUBLE, 
 	`PHONE` VARCHAR(32), 
 	`GEOLOCATIONID` DOUBLE
-   )
+   );
 -- ------------------------------------------------------
 --  DDL for Table EIS$REQUEST
 -- ------------------------------------------------------
@@ -1694,7 +1694,7 @@ COMMENT ON COLUMN `EIS$REASONSUSPEND`.`DESCRIPTION` IS 'Descripcion del motivo d
 	`CREATEDATE` DATETIME COMMENT 'Fecha y Hora de creacion', 
 	`OBSERVATION` VARCHAR(500) COMMENT 'Observaciones', 
 	`STATUSID` DOUBLE COMMENT 'Estado'
-   ) 
+   ) ;
 
    /* Moved to CREATE TABLE
 COMMENT ON COLUMN `EIS$REQUEST`.`ID` IS 'Codigo interno del sistema' */
@@ -1728,7 +1728,7 @@ COMMENT ON COLUMN `EIS$REQUEST`.`STATUSID` IS 'Estado' */
 	`FROMDATE` DATETIME, 
 	`STATUS` VARCHAR(1), 
 	`COMPANYID` DOUBLE
-   )
+   );
 -- ------------------------------------------------------
 --  DDL for Table EIS$SBSCRBERSRVCEACTIVATIONLOG
 -- ------------------------------------------------------
@@ -1738,7 +1738,7 @@ COMMENT ON COLUMN `EIS$REQUEST`.`STATUSID` IS 'Estado' */
 	`SUBSCRIBERSERVICEID` DOUBLE COMMENT 'Apuntador servicio suscrito', 
 	`ACTIVATIONDATE` DATETIME COMMENT 'Fecha activacion', 
 	`SUSPENDEDDATE` DATETIME COMMENT 'Fecha de suspension'
-   ) 
+   ) ;
 
    /* Moved to CREATE TABLE
 COMMENT ON COLUMN `EIS$SBSCRBERSRVCEACTIVATIONLOG`.`ID` IS 'Codigo interno' */
@@ -1757,7 +1757,7 @@ COMMENT ON COLUMN `EIS$SBSCRBERSRVCEACTIVATIONLOG`.`SUSPENDEDDATE` IS 'Fecha de 
 	`COMPANYID` DOUBLE COMMENT 'Apuntador a compania', 
 	`SUBSCRIBERSERVICEID` DOUBLE COMMENT 'Apuntador al servicio subscrito', 
 	`REASONSUSPENDID` DOUBLE COMMENT 'Apuntador al motivo de suspencion'
-   ) 
+   ) ;
 
    /* Moved to CREATE TABLE
 COMMENT ON COLUMN `EIS$SBSCRBRSRVCRSNSUSPEND`.`ID` IS 'Codigo interno del sistema' */
@@ -1779,7 +1779,7 @@ COMMENT ON COLUMN `EIS$SBSCRBRSRVCRSNSUSPEND`.`REASONSUSPENDID` IS 'Apuntador al
 	`FROMDATE` DATETIME COMMENT 'Fecha activa la definicion', 
 	`TODATE` DATETIME COMMENT 'Fecha desactiva la definicion', 
 	`STATUSID` DOUBLE COMMENT 'Apuntador a estados'
-   ) 
+   ) ;
 
    /* Moved to CREATE TABLE
 COMMENT ON COLUMN `EIS$SERVICE`.`ID` IS 'Codigo interno del sistema' */
@@ -1803,7 +1803,7 @@ COMMENT ON COLUMN `EIS$SERVICE`.`STATUSID` IS 'Apuntador a estados' */
 	`SERVICEID` DOUBLE COMMENT 'Apuntador a servicio(paquete)', 
 	`COMPONENTSERVICEID` DOUBLE COMMENT 'Apuntador a servicio(componente)', 
 	`INVOICEINSERVICEID` DOUBLE COMMENT 'Apuntador a servicio(facturar en)'
-   ) 
+   ) ;
 
    /* Moved to CREATE TABLE
 COMMENT ON COLUMN `EIS$SERVICECOMPOSITION`.`ID` IS 'Codigo interno del sistema' */
@@ -1829,7 +1829,7 @@ COMMENT ON COLUMN `EIS$SERVICECOMPOSITION`.`INVOICEINSERVICEID` IS 'Apuntador a 
 	`MEASUREMENTUNITID` DOUBLE, 
 	`PRINTORDER` TINYINT, 
 	`FORMULAID` DOUBLE
-   )
+   );
 -- ------------------------------------------------------
 --  DDL for Table EIS$SERVICECONCEPTATTENDED
 -- ------------------------------------------------------
@@ -1839,7 +1839,7 @@ COMMENT ON COLUMN `EIS$SERVICECOMPOSITION`.`INVOICEINSERVICEID` IS 'Apuntador a 
 	`COMPANYID` DOUBLE COMMENT 'Apuntador a compania', 
 	`INVOICESERVICEID` DOUBLE COMMENT 'Servicio al cual se le factura', 
 	`SERVICECONCEPTID` DOUBLE COMMENT 'Serviciio Concepto facturados al servicio InvoiceServiceId'
-   ) 
+   ) ;
 
    /* Moved to CREATE TABLE
 COMMENT ON COLUMN `EIS$SERVICECONCEPTATTENDED`.`ID` IS 'Codigo interno del sistema' */
@@ -1861,7 +1861,7 @@ COMMENT ON COLUMN `EIS$SERVICECONCEPTATTENDED`.`SERVICECONCEPTID` IS 'Serviciio 
 	`DESCRIPTION` VARCHAR(50), 
 	`VALUE` DECIMAL(18,2), 
 	`CONCEPTID` DOUBLE
-   )
+   );
 -- ------------------------------------------------------
 --  DDL for Table EIS$SERVICETYPE
 -- ------------------------------------------------------
@@ -1871,7 +1871,7 @@ COMMENT ON COLUMN `EIS$SERVICECONCEPTATTENDED`.`SERVICECONCEPTID` IS 'Serviciio 
 	`COMPANYID` DOUBLE COMMENT 'Apuntador a compania', 
 	`DESCRIPTION` VARCHAR(50), 
 	`ICONOFILENAME` VARCHAR(16) COMMENT 'Archivo que contiene icono para representar el servicio'
-   ) 
+   ) ;
 
    /* Moved to CREATE TABLE
 COMMENT ON COLUMN `EIS$SERVICETYPE`.`ID` IS 'Codigo interno del sistema' */
@@ -1890,7 +1890,7 @@ COMMENT ON COLUMN `EIS$SERVICETYPE`.`ICONOFILENAME` IS 'Archivo que contiene ico
 	`IDENTIFICATIONTYPEID` DOUBLE COMMENT 'Apuntador a tipos de identificacion', 
 	`IDENTIFICATIONCODE` VARCHAR(19), 
 	`NAME` VARCHAR(70)
-   ) 
+   ) ;
 
    /* Moved to CREATE TABLE
 COMMENT ON COLUMN `EIS$SERVICEUSER`.`ID` IS 'Codigo interno del sistema' */
@@ -1910,7 +1910,7 @@ COMMENT ON COLUMN `EIS$SERVICEUSER`.`IDENTIFICATIONTYPEID` IS 'Apuntador a tipos
 	`IDENTIFICATIONCODE` VARCHAR(19), 
 	`NAME` VARCHAR(70), 
 	`FROMDATE` DATETIME COMMENT 'Fecha activacion como cliente'
-   ) 
+   ) ;
 
    /* Moved to CREATE TABLE
 COMMENT ON COLUMN `EIS$SUBSCRIBER`.`ID` IS 'Codigo interno del sistema' */
@@ -1939,7 +1939,7 @@ COMMENT ON COLUMN `EIS$SUBSCRIBER`.`FROMDATE` IS 'Fecha activacion como cliente'
 	`NAME` VARCHAR(70) COMMENT 'Nombre del Subscriptor', 
 	`FROMDATE` DATETIME COMMENT 'Fecha activacion como cliente', 
 	`CHANGETYPE` VARCHAR(2)
-   ) 
+   ) ;
 
    /* Moved to CREATE TABLE
 COMMENT ON COLUMN `EIS$SUBSCRIBERCHANGE`.`ID` IS 'Codigo interno del sistema' */
@@ -1986,7 +1986,7 @@ COMMENT ON COLUMN `EIS$SUBSCRIBERCHANGE`.`FROMDATE` IS 'Fecha activacion como cl
 	`ACTIVATIONDATE` DATETIME COMMENT 'Ultima fecha de activacion del servicio', 
 	`SUSPENDEDDATE` DATETIME COMMENT 'Ultima fecha de suspension del servicio', 
 	`REASONSUSPENDID` DOUBLE COMMENT 'Apuntador ultimo motivo de suspension'
-   ) 
+   ) ;
 
    /* Moved to CREATE TABLE
 COMMENT ON COLUMN `EIS$SUBSCRIBERSERVICE`.`ID` IS 'Codigo interno del sistema' */
@@ -2027,7 +2027,7 @@ COMMENT ON COLUMN `EIS$SUBSCRIBERSERVICE`.`REASONSUSPENDID` IS 'Apuntador ultimo
 	`REQUESTID` DOUBLE COMMENT 'Apuntador a la peticion', 
 	`PREVIOUSSUBSCRIBERSERVICEID` DOUBLE COMMENT 'Apuntador al servicio subscrito anterior', 
 	`SUBSCRIBERSERVICEID` DOUBLE COMMENT 'Apuntador al servicio subscrito nuevo'
-   ) 
+   ) ;
 
    /* Moved to CREATE TABLE
 COMMENT ON COLUMN `EIS$SUBSCRIBERSERVICECHANGE`.`ID` IS 'Codigo interno del sistema' */
@@ -2052,7 +2052,7 @@ COMMENT ON COLUMN `EIS$SUBSCRIBERSERVICECHANGE`.`SUBSCRIBERSERVICEID` IS 'Apunta
 	`PERCENTAGE` DECIMAL(9,6), 
 	`CREATEDATE` DATETIME, 
 	`DATE_` DATETIME
-   )
+   );
 -- ------------------------------------------------------
 --  DDL for Table EIS$TAXTYPE
 -- ------------------------------------------------------
@@ -2062,7 +2062,7 @@ COMMENT ON COLUMN `EIS$SUBSCRIBERSERVICECHANGE`.`SUBSCRIBERSERVICEID` IS 'Apunta
 	`COMPANYID` DOUBLE, 
 	`SHORTNAME` VARCHAR(16), 
 	`DESCRIPTION` VARCHAR(50)
-   )
+   );
 -- ------------------------------------------------------
 --  DDL for Table EIS$TRIBUTARYSUBSCRIBERTYPE
 -- ------------------------------------------------------
@@ -2075,7 +2075,7 @@ COMMENT ON COLUMN `EIS$SUBSCRIBERSERVICECHANGE`.`SUBSCRIBERSERVICEID` IS 'Apunta
 	`COMMONREGIME` VARCHAR(1), 
 	`GREATCONTRIBUTOR` VARCHAR(1), 
 	`SELFRETEINER` VARCHAR(1)
-   )
+   );
 -- ------------------------------------------------------
 --  DDL for Index EIS$ACCOUNTBALANCE_X1
 -- ------------------------------------------------------
