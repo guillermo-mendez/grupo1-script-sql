@@ -1,23 +1,23 @@
 -- ------------------------------------------------------
--- Archivo creado  - jueves-febrero-27-2020   
+-- Archivo creado  - jueves-febrero-27-2020
 -- ------------------------------------------------------
 -- ------------------------------------------------------
 --  DDL for Table EBS$ADDRESSTYPE
 -- ------------------------------------------------------
 
-  CREATE TABLE `ADMEXTRACTOS`.`EBS$ADDRESSTYPE` 
-   (	`ID` DOUBLE, 
-	`SHORTNAME` VARCHAR(8), 
+  CREATE TABLE `ADMEXTRACTOS`.`EBS$ADDRESSTYPE`
+   (	`ID` DOUBLE,
+	`SHORTNAME` VARCHAR(8),
 	`DESCRIPTION` VARCHAR(50)
    );
 -- ------------------------------------------------------
 --  DDL for Table EBS$CITY
 -- ------------------------------------------------------
 
-  CREATE TABLE `ADMEXTRACTOS`.`EBS$CITY` 
-   (	`ID` DOUBLE COMMENT 'Codigo interno del sistema', 
-	`NAME` VARCHAR(50), 
-	`SHORTNAME` VARCHAR(16) COMMENT 'Nombre abreviado de ciudad', 
+  CREATE TABLE `ADMEXTRACTOS`.`EBS$CITY`
+   (	`ID` DOUBLE COMMENT 'Codigo interno del sistema',
+	`NAME` VARCHAR(50),
+	`SHORTNAME` VARCHAR(16) COMMENT 'Nombre abreviado de ciudad',
 	`STATEID` DOUBLE COMMENT 'Apuntador a estados o departamentos'
    ) ;
 
@@ -31,27 +31,27 @@ COMMENT ON COLUMN `ADMEXTRACTOS`.`EBS$CITY`.`STATEID` IS 'Apuntador a estados o 
 --  DDL for Table EBS$COLLECTADDRESSTYPE
 -- ------------------------------------------------------
 
-  CREATE TABLE `ADMEXTRACTOS`.`EBS$COLLECTADDRESSTYPE` 
-   (	`ID` DOUBLE, 
+  CREATE TABLE `ADMEXTRACTOS`.`EBS$COLLECTADDRESSTYPE`
+   (	`ID` DOUBLE,
 	`DESCRIPTION` VARCHAR(50)
    );
 -- ------------------------------------------------------
 --  DDL for Table EBS$COMPANY
 -- ------------------------------------------------------
 
-  CREATE TABLE `ADMEXTRACTOS`.`EBS$COMPANY` 
-   (	`ID` DOUBLE COMMENT 'Codigo interno del sistema', 
-	`CODE` SMALLINT, 
-	`IDENTIFICATIONTYPEID` DOUBLE COMMENT 'Apuntador a tipos de identificacion', 
-	`IDENTIFICATIONCODE` VARCHAR(18), 
-	`NAME` VARCHAR(100), 
-	`ADDRESS` VARCHAR(200), 
-	`CITYID` DOUBLE COMMENT 'Apuntador a Ciudades', 
-	`CEOMANAGER` VARCHAR(200), 
-	`LANGUAGEID` DOUBLE COMMENT 'Apuntador a idiomas', 
-	`COMPANYTYPEID` DOUBLE, 
-	`MONEYID` DOUBLE COMMENT 'Apuntador a monedas', 
-	`LEAFNODEID` DOUBLE COMMENT 'Apuntador a compa?ias(leaf)', 
+  CREATE TABLE `ADMEXTRACTOS`.`EBS$COMPANY`
+   (	`ID` DOUBLE COMMENT 'Codigo interno del sistema',
+	`CODE` SMALLINT,
+	`IDENTIFICATIONTYPEID` DOUBLE COMMENT 'Apuntador a tipos de identificacion',
+	`IDENTIFICATIONCODE` VARCHAR(18),
+	`NAME` VARCHAR(100),
+	`ADDRESS` VARCHAR(200),
+	`CITYID` DOUBLE COMMENT 'Apuntador a Ciudades',
+	`CEOMANAGER` VARCHAR(200),
+	`LANGUAGEID` DOUBLE COMMENT 'Apuntador a idiomas',
+	`COMPANYTYPEID` DOUBLE,
+	`MONEYID` DOUBLE COMMENT 'Apuntador a monedas',
+	`LEAFNODEID` DOUBLE COMMENT 'Apuntador a compa?ias(leaf)',
 	`ROOTNODEID` DOUBLE COMMENT 'Apuntador a compa?ias(root)'
    ) ;
 
@@ -73,8 +73,8 @@ COMMENT ON COLUMN `ADMEXTRACTOS`.`EBS$COMPANY`.`ROOTNODEID` IS 'Apuntador a comp
 --  DDL for Table EBS$COMPANYTYPE
 -- ------------------------------------------------------
 
-  CREATE TABLE `ADMEXTRACTOS`.`EBS$COMPANYTYPE` 
-   (	`ID` DOUBLE COMMENT 'Codigo interno del sistema', 
+  CREATE TABLE `ADMEXTRACTOS`.`EBS$COMPANYTYPE`
+   (	`ID` DOUBLE COMMENT 'Codigo interno del sistema',
 	`DESCRIPTION` VARCHAR(50)
    ) ;
 
@@ -84,9 +84,9 @@ COMMENT ON COLUMN `ADMEXTRACTOS`.`EBS$COMPANYTYPE`.`ID` IS 'Codigo interno del s
 --  DDL for Table EBS$COUNTRY
 -- ------------------------------------------------------
 
-  CREATE TABLE `ADMEXTRACTOS`.`EBS$COUNTRY` 
-   (	`ID` DOUBLE COMMENT 'Codigo interno del sistema', 
-	`NAME` VARCHAR(50), 
+  CREATE TABLE `ADMEXTRACTOS`.`EBS$COUNTRY`
+   (	`ID` DOUBLE COMMENT 'Codigo interno del sistema',
+	`NAME` VARCHAR(50),
 	`SHORTNAME` VARCHAR(16) COMMENT 'Nombre abreviado del pais'
    ) ;
 
@@ -98,9 +98,9 @@ COMMENT ON COLUMN `ADMEXTRACTOS`.`EBS$COUNTRY`.`SHORTNAME` IS 'Nombre abreviado 
 --  DDL for Table EBS$IDENTIFICATIONTYPE
 -- ------------------------------------------------------
 
-  CREATE TABLE `ADMEXTRACTOS`.`EBS$IDENTIFICATIONTYPE` 
-   (	`ID` DOUBLE COMMENT 'Codigo interno del sistema', 
-	`NAME` VARCHAR(50), 
+  CREATE TABLE `ADMEXTRACTOS`.`EBS$IDENTIFICATIONTYPE`
+   (	`ID` DOUBLE COMMENT 'Codigo interno del sistema',
+	`NAME` VARCHAR(50),
 	`SHORTNAME` VARCHAR(8) COMMENT 'Nombre abreviado para Documento de identificacion'
    ) ;
 
@@ -112,19 +112,19 @@ COMMENT ON COLUMN `ADMEXTRACTOS`.`EBS$IDENTIFICATIONTYPE`.`SHORTNAME` IS 'Nombre
 --  DDL for Table EBS$INSTRUCTION
 -- ------------------------------------------------------
 
-  CREATE TABLE `ADMEXTRACTOS`.`EBS$INSTRUCTION` 
-   (	`ID` DOUBLE, 
-	`BILLPERIODID` DOUBLE, 
-	`TABLENAME` VARCHAR(50), 
-	`ACTION` VARCHAR(1), 
+  CREATE TABLE `ADMEXTRACTOS`.`EBS$INSTRUCTION`
+   (	`ID` DOUBLE,
+	`BILLPERIODID` DOUBLE,
+	`TABLENAME` VARCHAR(50),
+	`ACTION` VARCHAR(1),
 	`INSTRUCTION` VARCHAR(2000)
    );
 -- ------------------------------------------------------
 --  DDL for Table EBS$LANGUAGE
 -- ------------------------------------------------------
 
-  CREATE TABLE `ADMEXTRACTOS`.`EBS$LANGUAGE` 
-   (	`ID` DOUBLE COMMENT 'Codigo interno del sistema', 
+  CREATE TABLE `ADMEXTRACTOS`.`EBS$LANGUAGE`
+   (	`ID` DOUBLE COMMENT 'Codigo interno del sistema',
 	`NAME` VARCHAR(50)
    ) ;
 
@@ -134,19 +134,19 @@ COMMENT ON COLUMN `ADMEXTRACTOS`.`EBS$LANGUAGE`.`ID` IS 'Codigo interno del sist
 --  DDL for Table EBS$MEASUREMENTUNIT
 -- ------------------------------------------------------
 
-  CREATE TABLE `ADMEXTRACTOS`.`EBS$MEASUREMENTUNIT` 
-   (	`ID` DOUBLE, 
-	`SHORTNAME` VARCHAR(8), 
+  CREATE TABLE `ADMEXTRACTOS`.`EBS$MEASUREMENTUNIT`
+   (	`ID` DOUBLE,
+	`SHORTNAME` VARCHAR(8),
 	`DESCRIPTION` VARCHAR(50)
    );
 -- ------------------------------------------------------
 --  DDL for Table EBS$MONEY
 -- ------------------------------------------------------
 
-  CREATE TABLE `ADMEXTRACTOS`.`EBS$MONEY` 
-   (	`ID` DOUBLE COMMENT 'Codigo interno del sistema', 
-	`NAME` VARCHAR(50), 
-	`SYMBOL` VARCHAR(3) COMMENT 'Simbolo o caracteres para expresar el tipo moneda', 
+  CREATE TABLE `ADMEXTRACTOS`.`EBS$MONEY`
+   (	`ID` DOUBLE COMMENT 'Codigo interno del sistema',
+	`NAME` VARCHAR(50),
+	`SYMBOL` VARCHAR(3) COMMENT 'Simbolo o caracteres para expresar el tipo moneda',
 	`ADJUSTACCOUNT` DOUBLE
    ) ;
 
@@ -158,31 +158,31 @@ COMMENT ON COLUMN `ADMEXTRACTOS`.`EBS$MONEY`.`SYMBOL` IS 'Simbolo o caracteres p
 --  DDL for Table EBS$MONEYCHANGERATE
 -- ------------------------------------------------------
 
-  CREATE TABLE `ADMEXTRACTOS`.`EBS$MONEYCHANGERATE` 
-   (	`ID` DOUBLE, 
-	`MONEYID` DOUBLE, 
-	`VALUE` DECIMAL(13,6), 
-	`CREATEDATE` DATETIME, 
+  CREATE TABLE `ADMEXTRACTOS`.`EBS$MONEYCHANGERATE`
+   (	`ID` DOUBLE,
+	`MONEYID` DOUBLE,
+	`VALUE` DECIMAL(13,6),
+	`CREATEDATE` DATETIME,
 	`FROMDATE` DATETIME
    );
 -- ------------------------------------------------------
 --  DDL for Table EBS$RETENTIONTAXSERVICE
 -- ------------------------------------------------------
 
-  CREATE TABLE `ADMEXTRACTOS`.`EBS$RETENTIONTAXSERVICE` 
-   (	`ID` DOUBLE, 
-	`COMPANYID` DOUBLE, 
-	`SERVICEID` DOUBLE, 
+  CREATE TABLE `ADMEXTRACTOS`.`EBS$RETENTIONTAXSERVICE`
+   (	`ID` DOUBLE,
+	`COMPANYID` DOUBLE,
+	`SERVICEID` DOUBLE,
 	`PERCENTAGE` DECIMAL(5,2)
    );
 -- ------------------------------------------------------
 --  DDL for Table EBS$STATE
 -- ------------------------------------------------------
 
-  CREATE TABLE `ADMEXTRACTOS`.`EBS$STATE` 
-   (	`ID` DOUBLE COMMENT 'Codigo interno del sistema', 
-	`NAME` VARCHAR(50), 
-	`SHORTNAME` VARCHAR(16) COMMENT 'Nombre abreviado del estado o departamento', 
+  CREATE TABLE `ADMEXTRACTOS`.`EBS$STATE`
+   (	`ID` DOUBLE COMMENT 'Codigo interno del sistema',
+	`NAME` VARCHAR(50),
+	`SHORTNAME` VARCHAR(16) COMMENT 'Nombre abreviado del estado o departamento',
 	`COUNTRYID` DOUBLE COMMENT 'Apuntador a paises'
    ) ;
 
@@ -196,9 +196,9 @@ COMMENT ON COLUMN `ADMEXTRACTOS`.`EBS$STATE`.`COUNTRYID` IS 'Apuntador a paises'
 --  DDL for Table EBS$STATUS
 -- ------------------------------------------------------
 
-  CREATE TABLE `ADMEXTRACTOS`.`EBS$STATUS` 
-   (	`ID` DOUBLE COMMENT 'Codigo interno del sistema', 
-	`ACTIONCODE` VARCHAR(16) COMMENT 'Token para una accion sobre un objeto ebCollect', 
+  CREATE TABLE `ADMEXTRACTOS`.`EBS$STATUS`
+   (	`ID` DOUBLE COMMENT 'Codigo interno del sistema',
+	`ACTIONCODE` VARCHAR(16) COMMENT 'Token para una accion sobre un objeto ebCollect',
 	`DESCRIPTION` VARCHAR(50) COMMENT 'Descripcion'
    ) ;
 
@@ -212,12 +212,12 @@ COMMENT ON COLUMN `ADMEXTRACTOS`.`EBS$STATUS`.`DESCRIPTION` IS 'Descripcion' */
 --  DDL for Table EBS$TRIBUTARYCOMPANYTYPE
 -- ------------------------------------------------------
 
-  CREATE TABLE `ADMEXTRACTOS`.`EBS$TRIBUTARYCOMPANYTYPE` 
-   (	`ID` DOUBLE, 
-	`COMPANYID` DOUBLE, 
-	`SIMPLIFIEDREGIME` VARCHAR(1), 
-	`COMMONREGIME` VARCHAR(1), 
-	`GREATCONTRIBUTOR` VARCHAR(1), 
+  CREATE TABLE `ADMEXTRACTOS`.`EBS$TRIBUTARYCOMPANYTYPE`
+   (	`ID` DOUBLE,
+	`COMPANYID` DOUBLE,
+	`SIMPLIFIEDREGIME` VARCHAR(1),
+	`COMMONREGIME` VARCHAR(1),
+	`GREATCONTRIBUTOR` VARCHAR(1),
 	`SELFRETEINER` VARCHAR(1)
    );
 -- ------------------------------------------------------
@@ -349,155 +349,4 @@ COMMENT ON COLUMN `ADMEXTRACTOS`.`EBS$STATUS`.`DESCRIPTION` IS 'Descripcion' */
 --  Constraints for Table EBS$ADDRESSTYPE
 -- ------------------------------------------------------
 
-  ALTER TABLE `ADMEXTRACTOS`.`EBS$ADDRESSTYPE` MODIFY `DESCRIPTION` VARCHAR(50) NOT NULL ;
-  ALTER TABLE `ADMEXTRACTOS`.`EBS$ADDRESSTYPE` MODIFY `SHORTNAME` VARCHAR(8) NOT NULL ;
-  ALTER TABLE `ADMEXTRACTOS`.`EBS$ADDRESSTYPE` MODIFY `ID` DOUBLE NOT NULL ;
--- ------------------------------------------------------
---  Constraints for Table EBS$CITY
--- ------------------------------------------------------
-
-  ALTER TABLE `ADMEXTRACTOS`.`EBS$CITY` ADD CONSTRAINT `EBS$CITY_IK` PRIMARY KEY (`ID`);
-  ALTER TABLE `ADMEXTRACTOS`.`EBS$CITY` MODIFY `STATEID` DOUBLE NOT NULL ;
-  ALTER TABLE `ADMEXTRACTOS`.`EBS$CITY` MODIFY `NAME` VARCHAR(50) NOT NULL ;
-  ALTER TABLE `ADMEXTRACTOS`.`EBS$CITY` MODIFY `ID` DOUBLE NOT NULL ;
--- ------------------------------------------------------
---  Constraints for Table EBS$COLLECTADDRESSTYPE
--- ------------------------------------------------------
-
-  ALTER TABLE `ADMEXTRACTOS`.`EBS$COLLECTADDRESSTYPE` MODIFY `DESCRIPTION` VARCHAR(50) NOT NULL ;
-  ALTER TABLE `ADMEXTRACTOS`.`EBS$COLLECTADDRESSTYPE` MODIFY `ID` DOUBLE NOT NULL ;
--- ------------------------------------------------------
---  Constraints for Table EBS$COMPANY
--- ------------------------------------------------------
-
-  ALTER TABLE `ADMEXTRACTOS`.`EBS$COMPANY` ADD CONSTRAINT `EBS$COMPANY_IK` PRIMARY KEY (`ID`);
-  ALTER TABLE `ADMEXTRACTOS`.`EBS$COMPANY` MODIFY `MONEYID` DOUBLE NOT NULL ;
-  ALTER TABLE `ADMEXTRACTOS`.`EBS$COMPANY` MODIFY `COMPANYTYPEID` DOUBLE NOT NULL ;
-  ALTER TABLE `ADMEXTRACTOS`.`EBS$COMPANY` MODIFY `LANGUAGEID` DOUBLE NOT NULL ;
-  ALTER TABLE `ADMEXTRACTOS`.`EBS$COMPANY` MODIFY `NAME` VARCHAR(100) NOT NULL ;
-  ALTER TABLE `ADMEXTRACTOS`.`EBS$COMPANY` MODIFY `IDENTIFICATIONCODE` VARCHAR(18) NOT NULL ;
-  ALTER TABLE `ADMEXTRACTOS`.`EBS$COMPANY` MODIFY `IDENTIFICATIONTYPEID` DOUBLE NOT NULL ;
-  ALTER TABLE `ADMEXTRACTOS`.`EBS$COMPANY` MODIFY `CODE` SMALLINT NOT NULL ;
-  ALTER TABLE `ADMEXTRACTOS`.`EBS$COMPANY` MODIFY `ID` DOUBLE NOT NULL ;
--- ------------------------------------------------------
---  Constraints for Table EBS$COMPANYTYPE
--- ------------------------------------------------------
-
-  ALTER TABLE `ADMEXTRACTOS`.`EBS$COMPANYTYPE` ADD CONSTRAINT `EBS$COMPANYTYPE_IK` PRIMARY KEY (`ID`);
-  ALTER TABLE `ADMEXTRACTOS`.`EBS$COMPANYTYPE` MODIFY `DESCRIPTION` VARCHAR(50) NOT NULL ;
-  ALTER TABLE `ADMEXTRACTOS`.`EBS$COMPANYTYPE` MODIFY `ID` DOUBLE NOT NULL ;
--- ------------------------------------------------------
---  Constraints for Table EBS$COUNTRY
--- ------------------------------------------------------
-
-  ALTER TABLE `ADMEXTRACTOS`.`EBS$COUNTRY` ADD CONSTRAINT `EBS$COUNTRY_IK` PRIMARY KEY (`ID`);
-  ALTER TABLE `ADMEXTRACTOS`.`EBS$COUNTRY` MODIFY `NAME` VARCHAR(50) NOT NULL ;
-  ALTER TABLE `ADMEXTRACTOS`.`EBS$COUNTRY` MODIFY `ID` DOUBLE NOT NULL ;
--- ------------------------------------------------------
---  Constraints for Table EBS$IDENTIFICATIONTYPE
--- ------------------------------------------------------
-
-  ALTER TABLE `ADMEXTRACTOS`.`EBS$IDENTIFICATIONTYPE` ADD CONSTRAINT `EBS$IDENTIFICATIONTYPE_IK` PRIMARY KEY (`ID`);
-  ALTER TABLE `ADMEXTRACTOS`.`EBS$IDENTIFICATIONTYPE` MODIFY `NAME` VARCHAR(50) NOT NULL ;
-  ALTER TABLE `ADMEXTRACTOS`.`EBS$IDENTIFICATIONTYPE` MODIFY `ID` DOUBLE NOT NULL ;
--- ------------------------------------------------------
---  Constraints for Table EBS$INSTRUCTION
--- ------------------------------------------------------
-
-  ALTER TABLE `ADMEXTRACTOS`.`EBS$INSTRUCTION` MODIFY `INSTRUCTION` VARCHAR(2000) NOT NULL ;
-  ALTER TABLE `ADMEXTRACTOS`.`EBS$INSTRUCTION` MODIFY `ACTION` VARCHAR(1) NOT NULL ;
-  ALTER TABLE `ADMEXTRACTOS`.`EBS$INSTRUCTION` MODIFY `TABLENAME` VARCHAR(50) NOT NULL ;
-  ALTER TABLE `ADMEXTRACTOS`.`EBS$INSTRUCTION` MODIFY `BILLPERIODID` DOUBLE NOT NULL ;
-  ALTER TABLE `ADMEXTRACTOS`.`EBS$INSTRUCTION` MODIFY `ID` DOUBLE NOT NULL ;
--- ------------------------------------------------------
---  Constraints for Table EBS$LANGUAGE
--- ------------------------------------------------------
-
-  ALTER TABLE `ADMEXTRACTOS`.`EBS$LANGUAGE` ADD CONSTRAINT `EBS$LANGUAGE_IK` PRIMARY KEY (`ID`);
-  ALTER TABLE `ADMEXTRACTOS`.`EBS$LANGUAGE` MODIFY `NAME` VARCHAR(50) NOT NULL ;
-  ALTER TABLE `ADMEXTRACTOS`.`EBS$LANGUAGE` MODIFY `ID` DOUBLE NOT NULL ;
--- ------------------------------------------------------
---  Constraints for Table EBS$MEASUREMENTUNIT
--- ------------------------------------------------------
-
-  ALTER TABLE `ADMEXTRACTOS`.`EBS$MEASUREMENTUNIT` ADD CONSTRAINT `EBS$MEASUREMENTUNIT_IK` PRIMARY KEY (`ID`);
-  ALTER TABLE `ADMEXTRACTOS`.`EBS$MEASUREMENTUNIT` MODIFY `DESCRIPTION` VARCHAR(50) NOT NULL ;
-  ALTER TABLE `ADMEXTRACTOS`.`EBS$MEASUREMENTUNIT` MODIFY `SHORTNAME` VARCHAR(8) NOT NULL ;
-  ALTER TABLE `ADMEXTRACTOS`.`EBS$MEASUREMENTUNIT` MODIFY `ID` DOUBLE NOT NULL ;
--- ------------------------------------------------------
---  Constraints for Table EBS$MONEY
--- ------------------------------------------------------
-
-  ALTER TABLE `ADMEXTRACTOS`.`EBS$MONEY` ADD CONSTRAINT `EBS$MONEY_IK` PRIMARY KEY (`ID`);
-  ALTER TABLE `ADMEXTRACTOS`.`EBS$MONEY` MODIFY `SYMBOL` VARCHAR(3) NOT NULL ;
-  ALTER TABLE `ADMEXTRACTOS`.`EBS$MONEY` MODIFY `NAME` VARCHAR(50) NOT NULL ;
-  ALTER TABLE `ADMEXTRACTOS`.`EBS$MONEY` MODIFY `ID` DOUBLE NOT NULL ;
--- ------------------------------------------------------
---  Constraints for Table EBS$MONEYCHANGERATE
--- ------------------------------------------------------
-
-  ALTER TABLE `ADMEXTRACTOS`.`EBS$MONEYCHANGERATE` ADD CONSTRAINT `EBS$MONEYCHANGERATE_IK` PRIMARY KEY (`ID`);
-  ALTER TABLE `ADMEXTRACTOS`.`EBS$MONEYCHANGERATE` MODIFY `CREATEDATE` DATETIME NOT NULL ;
-  ALTER TABLE `ADMEXTRACTOS`.`EBS$MONEYCHANGERATE` MODIFY `VALUE` DECIMAL(13,6) NOT NULL ;
-  ALTER TABLE `ADMEXTRACTOS`.`EBS$MONEYCHANGERATE` MODIFY `MONEYID` DOUBLE NOT NULL ;
-  ALTER TABLE `ADMEXTRACTOS`.`EBS$MONEYCHANGERATE` MODIFY `ID` DOUBLE NOT NULL;-- ------------------------------------------------------
---  Constraints for Table EBS$RETENTIONTAXSERVICE
--- ------------------------------------------------------
-
-  ALTER TABLE `ADMEXTRACTOS`.`EBS$RETENTIONTAXSERVICE` MODIFY `PERCENTAGE`DECIMAL(5,2) NOT NULL ;
-  ALTER TABLE `ADMEXTRACTOS`.`EBS$RETENTIONTAXSERVICE` MODIFY `SERVICEID` DOUBLE NOT NULL ;
-  ALTER TABLE `ADMEXTRACTOS`.`EBS$RETENTIONTAXSERVICE` MODIFY `COMPANYID` DOUBLE NOT NULL ;
-  ALTER TABLE `ADMEXTRACTOS`.`EBS$RETENTIONTAXSERVICE` MODIFY `ID` DOUBLE NOT NULL ;
--- ------------------------------------------------------
---  Constraints for Table EBS$STATE
--- ------------------------------------------------------
-
-  ALTER TABLE `ADMEXTRACTOS`.`EBS$STATE` ADD CONSTRAINT `EBS$STATE_IK` PRIMARY KEY (`ID`);
-  ALTER TABLE `ADMEXTRACTOS`.`EBS$STATE` MODIFY `COUNTRYID` DOUBLE NOT NULL ;
-  ALTER TABLE `ADMEXTRACTOS`.`EBS$STATE` MODIFY `NAME` VARCHAR(50) NOT NULL ;
-  ALTER TABLE `ADMEXTRACTOS`.`EBS$STATE` MODIFY `ID` DOUBLE NOT NULL ;
--- ------------------------------------------------------
---  Constraints for Table EBS$STATUS
--- ------------------------------------------------------
-
-  ALTER TABLE `ADMEXTRACTOS`.`EBS$STATUS` ADD CONSTRAINT `EBS$STATUS_IK` PRIMARY KEY (`ID`);
-  ALTER TABLE `ADMEXTRACTOS`.`EBS$STATUS` MODIFY `DESCRIPTION` VARCHAR(50) NOT NULL ;
-  ALTER TABLE `ADMEXTRACTOS`.`EBS$STATUS` MODIFY `ACTIONCODE` VARCHAR(16) NOT NULL ;
-  ALTER TABLE `ADMEXTRACTOS`.`EBS$STATUS` MODIFY `ID` DOUBLE NOT NULL ;
--- ------------------------------------------------------
---  Constraints for Table EBS$TRIBUTARYCOMPANYTYPE
--- ------------------------------------------------------
-
-  ALTER TABLE `ADMEXTRACTOS`.`EBS$TRIBUTARYCOMPANYTYPE` MODIFY `COMPANYID` DOUBLE NOT NULL ;
-  ALTER TABLE `ADMEXTRACTOS`.`EBS$TRIBUTARYCOMPANYTYPE` MODIFY `ID` DOUBLE NOT NULL ;
--- ------------------------------------------------------
---  Ref Constraints for Table EBS$CITY
--- ------------------------------------------------------
-
-  ALTER TABLE `ADMEXTRACTOS`.`EBS$CITY` ADD CONSTRAINT `EBS$CITYSTATE_F` FOREIGN KEY (`STATEID`)
-	  REFERENCES `ADMEXTRACTOS`.`EBS$STATE` (`ID`) ;
--- ------------------------------------------------------
---  Ref Constraints for Table EBS$COMPANY
--- ------------------------------------------------------
-
-  ALTER TABLE `ADMEXTRACTOS`.`EBS$COMPANY` ADD CONSTRAINT `EBS$CMPNYCITY_F` FOREIGN KEY (`CITYID`)
-	  REFERENCES `ADMEXTRACTOS`.`EBS$CITY` (`ID`) ;
-  ALTER TABLE `ADMEXTRACTOS`.`EBS$COMPANY` ADD CONSTRAINT `EBS$CMPNYCMPNYTYPE_F` FOREIGN KEY (`COMPANYTYPEID`)
-	  REFERENCES `ADMEXTRACTOS`.`EBS$COMPANYTYPE` (`ID`) ;
-  ALTER TABLE `ADMEXTRACTOS`.`EBS$COMPANY` ADD CONSTRAINT `EBS$CMPNYIDNTFCTIONTYPE_F` FOREIGN KEY (`IDENTIFICATIONTYPEID`)
-	  REFERENCES `ADMEXTRACTOS`.`EBS$IDENTIFICATIONTYPE` (`ID`) ;
-  ALTER TABLE `ADMEXTRACTOS`.`EBS$COMPANY` ADD CONSTRAINT `EBS$CMPNYLANGUAGE_F` FOREIGN KEY (`LANGUAGEID`)
-	  REFERENCES `ADMEXTRACTOS`.`EBS$LANGUAGE` (`ID`) ;
-  ALTER TABLE `ADMEXTRACTOS`.`EBS$COMPANY` ADD CONSTRAINT `EBS$CMPNYLEAFNODE_F` FOREIGN KEY (`LEAFNODEID`)
-	  REFERENCES `ADMEXTRACTOS`.`EBS$COMPANY` (`ID`) ;
-  ALTER TABLE `ADMEXTRACTOS`.`EBS$COMPANY` ADD CONSTRAINT `EBS$CMPNYMONEY_F` FOREIGN KEY (`MONEYID`)
-	  REFERENCES `ADMEXTRACTOS`.`EBS$MONEY` (`ID`) ;
-  ALTER TABLE `ADMEXTRACTOS`.`EBS$COMPANY` ADD CONSTRAINT `EBS$CMPNYROOTNODE_F` FOREIGN KEY (`ROOTNODEID`)
-	  REFERENCES `ADMEXTRACTOS`.`EBS$COMPANY` (`ID`) ;
--- ------------------------------------------------------
---  Ref Constraints for Table EBS$STATE
--- ------------------------------------------------------
-
-  ALTER TABLE `ADMEXTRACTOS`.`EBS$STATE` ADD CONSTRAINT `EBS$STATECOUNTRY_F` FOREIGN KEY (`COUNTRYID`)
-	  REFERENCES `ADMEXTRACTOS`.`EBS$COUNTRY` (`ID`) ;
 
