@@ -601,8 +601,9 @@
 -- ------------------------------------------------------
 --  DDL for Index BNK$PDF_X2
 -- ------------------------------------------------------
-
+/* ERROR
   CREATE INDEX `BNK$PDF_X2` ON `BNK$PDF` (`PRODUCTID`, `YEAR`, `MONTH`, SUBSTR(`TECHNICALCODE`,LOCATE('_', `TECHNICALCODE`,-1)+1));
+  */
 -- ------------------------------------------------------
 --  DDL for Index BNK$PDF_IK
 -- ------------------------------------------------------
@@ -706,8 +707,9 @@
 -- ------------------------------------------------------
 --  DDL for Index BNK$QUERYDATA_IK
 -- ------------------------------------------------------
-
+/* ERROR
   CREATE UNIQUE INDEX `BNK$QUERYDATA_IK` ON `BNK$QUERYDATA` (`PROCESSID`, `ORDERDATA`);
+  */
 -- ------------------------------------------------------
 --  DDL for Index BNK$RESCHEDULINGPROCESS_IK
 -- ------------------------------------------------------

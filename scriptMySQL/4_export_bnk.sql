@@ -49,7 +49,7 @@
 	`YEAR` SMALLINT COMMENT 'A�o corte impresion extracto',
 	`MONTH` TINYINT COMMENT 'Mes corte impresion extractos',
 	`PRINTCLOSETYPE` DOUBLE COMMENT 'Tipo corte impresion extractos'
-   )
+   );
 
    /* Moved to CREATE TABLE
 COMMENT ON COLUMN `BNK$ACCOUNTBALANCE_`.`ID` IS 'Secuenciador' */
@@ -175,7 +175,7 @@ COMMENT ON COLUMN `BNK$ACCOUNTBALANCE_`.`PRINTCLOSETYPE` IS 'Tipo corte impresio
 	`YEAR` SMALLINT,
 	`MONTH` TINYINT,
 	`PRINTCLOSETYPE` DOUBLE
-   )
+   );
 -- ------------------------------------------------------
 --  DDL for Table BNK$ACCOUNTBALANCE_0002
 -- ------------------------------------------------------
@@ -224,7 +224,7 @@ COMMENT ON COLUMN `BNK$ACCOUNTBALANCE_`.`PRINTCLOSETYPE` IS 'Tipo corte impresio
 	`YEAR` SMALLINT,
 	`MONTH` TINYINT,
 	`PRINTCLOSETYPE` DOUBLE
-   )
+   );
 -- ------------------------------------------------------
 --  DDL for Table BNK$ACCOUNTBALANCE_0003
 -- ------------------------------------------------------
@@ -273,7 +273,7 @@ COMMENT ON COLUMN `BNK$ACCOUNTBALANCE_`.`PRINTCLOSETYPE` IS 'Tipo corte impresio
 	`YEAR` SMALLINT,
 	`MONTH` TINYINT,
 	`PRINTCLOSETYPE` DOUBLE
-   )
+   );
 -- ------------------------------------------------------
 --  DDL for Table BNK$ACCOUNTBALANCE_0004
 -- ------------------------------------------------------
@@ -322,7 +322,7 @@ COMMENT ON COLUMN `BNK$ACCOUNTBALANCE_`.`PRINTCLOSETYPE` IS 'Tipo corte impresio
 	`YEAR` SMALLINT,
 	`MONTH` TINYINT,
 	`PRINTCLOSETYPE` DOUBLE
-   )
+   );
 -- ------------------------------------------------------
 --  DDL for Table BNK$ACCOUNTBALANCE_0005
 -- ------------------------------------------------------
@@ -371,7 +371,7 @@ COMMENT ON COLUMN `BNK$ACCOUNTBALANCE_`.`PRINTCLOSETYPE` IS 'Tipo corte impresio
 	`YEAR` SMALLINT,
 	`MONTH` TINYINT,
 	`PRINTCLOSETYPE` DOUBLE
-   )
+   );
 -- ------------------------------------------------------
 --  DDL for Table BNK$ACCOUNTBALANCE_0006
 -- ------------------------------------------------------
@@ -420,7 +420,7 @@ COMMENT ON COLUMN `BNK$ACCOUNTBALANCE_`.`PRINTCLOSETYPE` IS 'Tipo corte impresio
 	`YEAR` SMALLINT,
 	`MONTH` TINYINT,
 	`PRINTCLOSETYPE` DOUBLE
-   )
+   );
 -- ------------------------------------------------------
 --  DDL for Table BNK$ACCOUNTBALANCE_OVFLW
 -- ------------------------------------------------------
@@ -469,7 +469,7 @@ COMMENT ON COLUMN `BNK$ACCOUNTBALANCE_`.`PRINTCLOSETYPE` IS 'Tipo corte impresio
 	`YEAR` SMALLINT,
 	`MONTH` TINYINT,
 	`PRINTCLOSETYPE` DOUBLE
-   )
+   );
 -- ------------------------------------------------------
 --  DDL for Table BNK$ADDTNALDCMENTDTIL_
 -- ------------------------------------------------------
@@ -484,7 +484,7 @@ COMMENT ON COLUMN `BNK$ACCOUNTBALANCE_`.`PRINTCLOSETYPE` IS 'Tipo corte impresio
 	`YEAR` SMALLINT COMMENT 'A�o corte impresion extracto',
 	`MONTH` TINYINT COMMENT 'Mes corte impresion extractos',
 	`PRINTCLOSETYPE` DOUBLE COMMENT 'Tipo corte impresion extractos'
-   )
+   );
 
    /* Moved to CREATE TABLE
 COMMENT ON COLUMN `BNK$ADDTNALDCMENTDTIL_`.`ID` IS 'Codigo interno del sistema' */
@@ -518,7 +518,7 @@ COMMENT ON COLUMN `BNK$ADDTNALDCMENTDTIL_`.`PRINTCLOSETYPE` IS 'Tipo corte impre
 	`YEAR` SMALLINT,
 	`MONTH` TINYINT,
 	`PRINTCLOSETYPE` DOUBLE
-   )
+   );
 -- ------------------------------------------------------
 --  DDL for Table BNK$ADDTNALDCMENTDTIL_0002
 -- ------------------------------------------------------
@@ -533,7 +533,7 @@ COMMENT ON COLUMN `BNK$ADDTNALDCMENTDTIL_`.`PRINTCLOSETYPE` IS 'Tipo corte impre
 	`YEAR` SMALLINT,
 	`MONTH` TINYINT,
 	`PRINTCLOSETYPE` DOUBLE
-   )
+   );
 -- ------------------------------------------------------
 --  DDL for Table BNK$ADDTNALDCMENTDTIL_0003
 -- ------------------------------------------------------
@@ -548,7 +548,7 @@ COMMENT ON COLUMN `BNK$ADDTNALDCMENTDTIL_`.`PRINTCLOSETYPE` IS 'Tipo corte impre
 	`YEAR` SMALLINT,
 	`MONTH` TINYINT,
 	`PRINTCLOSETYPE` DOUBLE
-   )
+   );
 -- ------------------------------------------------------
 --  DDL for Table BNK$ADDTNALDCMENTDTIL_0004
 -- ------------------------------------------------------
@@ -563,7 +563,7 @@ COMMENT ON COLUMN `BNK$ADDTNALDCMENTDTIL_`.`PRINTCLOSETYPE` IS 'Tipo corte impre
 	`YEAR` SMALLINT,
 	`MONTH` TINYINT,
 	`PRINTCLOSETYPE` DOUBLE
-   )
+   );
 -- ------------------------------------------------------
 --  DDL for Table BNK$ADDTNALDCMENTDTIL_0005
 -- ------------------------------------------------------
@@ -578,7 +578,7 @@ COMMENT ON COLUMN `BNK$ADDTNALDCMENTDTIL_`.`PRINTCLOSETYPE` IS 'Tipo corte impre
 	`YEAR` SMALLINT,
 	`MONTH` TINYINT,
 	`PRINTCLOSETYPE` DOUBLE
-   )
+   );
 -- ------------------------------------------------------
 --  DDL for Table BNK$ADDTNALDCMENTDTIL_0006
 -- ------------------------------------------------------
@@ -593,7 +593,7 @@ COMMENT ON COLUMN `BNK$ADDTNALDCMENTDTIL_`.`PRINTCLOSETYPE` IS 'Tipo corte impre
 	`YEAR` SMALLINT,
 	`MONTH` TINYINT,
 	`PRINTCLOSETYPE` DOUBLE
-   )
+   );
 -- ------------------------------------------------------
 --  DDL for Table BNK$ADDTNALDCMENTDTIL_OVFLW
 -- ------------------------------------------------------
@@ -608,7 +608,7 @@ COMMENT ON COLUMN `BNK$ADDTNALDCMENTDTIL_`.`PRINTCLOSETYPE` IS 'Tipo corte impre
 	`YEAR` SMALLINT,
 	`MONTH` TINYINT,
 	`PRINTCLOSETYPE` DOUBLE
-   )
+   );
 -- ------------------------------------------------------
 --  DDL for Table BNK$AGREEMENTSERVICE
 -- ------------------------------------------------------
@@ -632,7 +632,7 @@ COMMENT ON COLUMN `BNK$ADDTNALDCMENTDTIL_`.`PRINTCLOSETYPE` IS 'Tipo corte impre
 	`LOOKSTATUS` VARCHAR(2) COMMENT 'Estado de bloqueo',
 	`AGREEMENTID` DOUBLE COMMENT 'Codigo interno del Control de Archivos',
 	`SRCFILELINENO` DOUBLE COMMENT 'Numero linea archivo fuente'
-   )
+   );
 
    /* Moved to CREATE TABLE
 COMMENT ON COLUMN `BNK$AGREEMENTSERVICE`.`ID` IS 'Codigo interno del sistema' */
@@ -683,7 +683,7 @@ COMMENT ON COLUMN `BNK$AGREEMENTSERVICE`.`SRCFILELINENO` IS 'Numero linea archiv
 	`PHONE` VARCHAR(7) COMMENT 'Telefono del cliente',
 	`PHONEEXTENSION` DOUBLE COMMENT 'Extencion de Telefono',
 	`PHONETYPEID` DOUBLE COMMENT 'Tipo de telefono'
-   )
+   );
 
    /* Moved to CREATE TABLE
 COMMENT ON COLUMN `BNK$AGREESERVICECOLLECTADDRESS`.`ID` IS 'Codigo interno del sistema' */
@@ -709,7 +709,7 @@ COMMENT ON COLUMN `BNK$AGREESERVICECOLLECTADDRESS`.`PHONETYPEID` IS 'Tipo de tel
    (	`ID` DOUBLE COMMENT 'Codigo interno del sistema',
 	`CODE` VARCHAR(3) COMMENT 'Codigo de la aplicacion',
 	`DESCRIPTION` VARCHAR(30) COMMENT 'Descripcion de la aplicacion'
-   )
+   );
 
    /* Moved to CREATE TABLE
 COMMENT ON COLUMN `BNK$APPLICATION`.`ID` IS 'Codigo interno del sistema' */
@@ -725,7 +725,7 @@ COMMENT ON COLUMN `BNK$APPLICATION`.`DESCRIPTION` IS 'Descripcion de la aplicaci
    (	`ID` DOUBLE COMMENT 'Codigo interno del sistema',
 	`CODE` VARCHAR(2) COMMENT 'Codigo del canal',
 	`DESCRIPTION` VARCHAR(30) COMMENT 'Descripcion del canal'
-   )
+   );
 
    /* Moved to CREATE TABLE
 COMMENT ON COLUMN `BNK$CHANNEL`.`ID` IS 'Codigo interno del sistema' */
@@ -740,7 +740,7 @@ COMMENT ON COLUMN `BNK$CHANNEL`.`DESCRIPTION` IS 'Descripcion del canal' */
   CREATE TABLE `BNK$CITYSTORE`
    (	`ID` DOUBLE COMMENT 'Codigo interno del sistema',
 	`NAME` VARCHAR(50)
-   )
+   );
 
    /* Moved to CREATE TABLE
 COMMENT ON COLUMN `BNK$CITYSTORE`.`ID` IS 'Codigo interno del sistema' */
@@ -756,7 +756,7 @@ COMMENT ON COLUMN `BNK$CITYSTORE`.`ID` IS 'Codigo interno del sistema' */
 	`FROMDATE` DATETIME COMMENT 'Fecha de cierre',
 	`CLOSETYPE` DOUBLE COMMENT 'Tipo de cierre',
 	`STATUS` VARCHAR(1) COMMENT 'Estado del periodo'
-   )
+   );
 
    /* Moved to CREATE TABLE
 COMMENT ON COLUMN `BNK$CLOSEPERIOD`.`ID` IS 'Codigo interno del sistema' */
@@ -780,7 +780,7 @@ COMMENT ON COLUMN `BNK$CLOSEPERIOD`.`STATUS` IS 'Estado del periodo' */
    (	`ID` DOUBLE COMMENT 'Codigo interno del sistema',
 	`CODE` VARCHAR(6) COMMENT 'Codigo',
 	`DESCRIPTION` VARCHAR(40) COMMENT 'Descripcion del codigo de compensacion'
-   )
+   );
 
    /* Moved to CREATE TABLE
 COMMENT ON COLUMN `BNK$COMPENSATION`.`ID` IS 'Codigo interno del sistema' */
@@ -797,7 +797,7 @@ COMMENT ON COLUMN `BNK$COMPENSATION`.`DESCRIPTION` IS 'Descripcion del codigo de
 	`PROCESSDEPENDID` DOUBLE COMMENT 'Codigo interno del Proceso Dependiente',
 	`PROCESSID` DOUBLE COMMENT 'Codigo interno Proceso a Ejecutar',
 	`EXECUTEDDATE` DATETIME COMMENT 'Fecha del cual se debe validar la Dependencia del Proceso'
-   )
+   );
 
    /* Moved to CREATE TABLE
 COMMENT ON COLUMN `BNK$CONTROLPROCESSDEPEND`.`ID` IS 'Codigo interno del sistema' */
@@ -818,7 +818,7 @@ COMMENT ON COLUMN `BNK$CONTROLPROCESSDEPEND`.`EXECUTEDDATE` IS 'Fecha del cual s
 	`SEGMENTPROGRAM` DOUBLE COMMENT 'Programa de segmentacion',
 	`PRINTINDICATOR` VARCHAR(1) COMMENT 'Indicador de impresion extracto',
 	`CREDITCARDTYPE` DOUBLE COMMENT 'Tipo tarjeta credito: 822 - master dollar, 823 - tarjetas credito pesos'
-   )
+   );
 
    /* Moved to CREATE TABLE
 COMMENT ON COLUMN `BNK$CREDITCARDFIX2SEG`.`ID` IS 'Codigo interno' */
@@ -843,7 +843,7 @@ COMMENT ON COLUMN `BNK$CREDITCARDFIX2SEG`.`CREDITCARDTYPE` IS 'Tipo tarjeta cred
 	`SEGMENTPROGRAM` DOUBLE,
 	`PRINTINDICATOR` VARCHAR(1),
 	`CREDITCARDTYPE` DOUBLE
-   )
+   );
 -- ------------------------------------------------------
 --  DDL for Table BNK$CUSTOMER
 -- ------------------------------------------------------
@@ -857,7 +857,7 @@ COMMENT ON COLUMN `BNK$CREDITCARDFIX2SEG`.`CREDITCARDTYPE` IS 'Tipo tarjeta cred
 	`NAME` VARCHAR(50) COMMENT 'Nombre del Cliente',
 	`SHORTNAME` VARCHAR(25) COMMENT 'Nombre corto del Cliente',
 	`FROMDATE` DATETIME COMMENT 'Fecha de Apertura'
-   )
+   );
 
    /* Moved to CREATE TABLE
 COMMENT ON COLUMN `BNK$CUSTOMER`.`ID` IS 'Codigo interno del sistema' */
@@ -888,7 +888,7 @@ COMMENT ON COLUMN `BNK$CUSTOMER`.`FROMDATE` IS 'Fecha de Apertura' */
 	`PHONE` VARCHAR(7) COMMENT 'Telefono del cliente',
 	`PHONEEXTENSION` DOUBLE COMMENT 'Extencion de Telefono',
 	`PHONETYPEID` DOUBLE COMMENT 'Tipo de telefono'
-   )
+   );
 
    /* Moved to CREATE TABLE
 COMMENT ON COLUMN `BNK$CUSTOMERCOLLECTADDRESS`.`ID` IS 'Codigo interno del sistema' */
@@ -917,7 +917,7 @@ COMMENT ON COLUMN `BNK$CUSTOMERCOLLECTADDRESS`.`PHONETYPEID` IS 'Tipo de telefon
 	`ADDRESS` VARCHAR(160) COMMENT 'Direccion',
 	`CITY` VARCHAR(64) COMMENT 'Ciudad',
 	`STATE` VARCHAR(64) COMMENT 'Departamento'
-   )
+   );
 
    /* Moved to CREATE TABLE
 COMMENT ON COLUMN `BNK$CUSTOMERFIX2PRN`.`ID` IS 'Codigo interno' */
@@ -939,7 +939,7 @@ COMMENT ON COLUMN `BNK$CUSTOMERFIX2PRN`.`STATE` IS 'Departamento' */
    (	`ID` DOUBLE COMMENT 'Codigo interno del sistema',
 	`CUSTOMERID` DOUBLE COMMENT 'Codigo interno del sistema para Clientes',
 	`SUBSCRIBERID` DOUBLE COMMENT 'Codigo interno del sistema para los Suscriptores'
-   )
+   );
 
    /* Moved to CREATE TABLE
 COMMENT ON COLUMN `BNK$CUSTOMERSUBSCRIBER`.`ID` IS 'Codigo interno del sistema' */
@@ -955,7 +955,7 @@ COMMENT ON COLUMN `BNK$CUSTOMERSUBSCRIBER`.`SUBSCRIBERID` IS 'Codigo interno del
    (	`ID` DOUBLE COMMENT 'Codigo interno del sistema',
 	`SUBSCRIBERID` DOUBLE COMMENT 'Codigo interno del sistema para el Suscriptor',
 	`CUSTOMERTYPE` VARCHAR(1) COMMENT 'Tipo de Cliente N Natura o J Juridico'
-   )
+   );
 
    /* Moved to CREATE TABLE
 COMMENT ON COLUMN `BNK$CUSTOMERTYPE`.`ID` IS 'Codigo interno del sistema' */
@@ -974,7 +974,7 @@ COMMENT ON COLUMN `BNK$CUSTOMERTYPE`.`CUSTOMERTYPE` IS 'Tipo de Cliente N Natura
 	`YEAR` SMALLINT,
 	`MONTH` TINYINT,
 	`CLOSETYPE` DOUBLE
-   )
+   );
 -- ------------------------------------------------------
 --  DDL for Table BNK$DOCUMENTDETAIL_
 -- ------------------------------------------------------
@@ -998,7 +998,7 @@ COMMENT ON COLUMN `BNK$CUSTOMERTYPE`.`CUSTOMERTYPE` IS 'Tipo de Cliente N Natura
 	`YEAR` SMALLINT COMMENT 'A�o corte impresion extracto',
 	`MONTH` TINYINT COMMENT 'Mes corte impresion extractos',
 	`PRINTCLOSETYPE` DOUBLE COMMENT 'Tipo corte impresion extractos'
-   )
+   );
 
    /* Moved to CREATE TABLE
 COMMENT ON COLUMN `BNK$DOCUMENTDETAIL_`.`AGREEMENTID` IS 'Codigo interno del Control de Archivos' */
@@ -1033,7 +1033,7 @@ COMMENT ON COLUMN `BNK$DOCUMENTDETAIL_`.`PRINTCLOSETYPE` IS 'Tipo corte impresio
 	`YEAR` SMALLINT,
 	`MONTH` TINYINT,
 	`PRINTCLOSETYPE` DOUBLE
-   )
+   );
 -- ------------------------------------------------------
 --  DDL for Table BNK$DOCUMENTDETAIL_0002
 -- ------------------------------------------------------
@@ -1057,7 +1057,7 @@ COMMENT ON COLUMN `BNK$DOCUMENTDETAIL_`.`PRINTCLOSETYPE` IS 'Tipo corte impresio
 	`YEAR` SMALLINT,
 	`MONTH` TINYINT,
 	`PRINTCLOSETYPE` DOUBLE
-   )
+   );
 -- ------------------------------------------------------
 --  DDL for Table BNK$DOCUMENTDETAIL_0003
 -- ------------------------------------------------------
@@ -1081,7 +1081,7 @@ COMMENT ON COLUMN `BNK$DOCUMENTDETAIL_`.`PRINTCLOSETYPE` IS 'Tipo corte impresio
 	`YEAR` SMALLINT,
 	`MONTH` TINYINT,
 	`PRINTCLOSETYPE` DOUBLE
-   )
+   );
 -- ------------------------------------------------------
 --  DDL for Table BNK$DOCUMENTDETAIL_0004
 -- ------------------------------------------------------
@@ -1105,7 +1105,7 @@ COMMENT ON COLUMN `BNK$DOCUMENTDETAIL_`.`PRINTCLOSETYPE` IS 'Tipo corte impresio
 	`YEAR` SMALLINT,
 	`MONTH` TINYINT,
 	`PRINTCLOSETYPE` DOUBLE
-   )
+   );
 -- ------------------------------------------------------
 --  DDL for Table BNK$DOCUMENTDETAIL_0005
 -- ------------------------------------------------------
@@ -1129,7 +1129,7 @@ COMMENT ON COLUMN `BNK$DOCUMENTDETAIL_`.`PRINTCLOSETYPE` IS 'Tipo corte impresio
 	`YEAR` SMALLINT,
 	`MONTH` TINYINT,
 	`PRINTCLOSETYPE` DOUBLE
-   )
+   );
 -- ------------------------------------------------------
 --  DDL for Table BNK$DOCUMENTDETAIL_0006
 -- ------------------------------------------------------
@@ -1153,7 +1153,7 @@ COMMENT ON COLUMN `BNK$DOCUMENTDETAIL_`.`PRINTCLOSETYPE` IS 'Tipo corte impresio
 	`YEAR` SMALLINT,
 	`MONTH` TINYINT,
 	`PRINTCLOSETYPE` DOUBLE
-   )
+   );
 -- ------------------------------------------------------
 --  DDL for Table BNK$DOCUMENTDETAIL_OVFLW
 -- ------------------------------------------------------
@@ -1177,7 +1177,7 @@ COMMENT ON COLUMN `BNK$DOCUMENTDETAIL_`.`PRINTCLOSETYPE` IS 'Tipo corte impresio
 	`YEAR` SMALLINT,
 	`MONTH` TINYINT,
 	`PRINTCLOSETYPE` DOUBLE
-   )
+   );
 -- ------------------------------------------------------
 --  DDL for Table BNK$ERRORNOTIFY
 -- ------------------------------------------------------
@@ -1190,7 +1190,7 @@ COMMENT ON COLUMN `BNK$DOCUMENTDETAIL_`.`PRINTCLOSETYPE` IS 'Tipo corte impresio
 	`STATUS` VARCHAR(2) COMMENT 'Orden de generacion de los detalles',
 	`SESSIONID` DOUBLE COMMENT 'Sesion eBImagine',
 	`ERRORID` DOUBLE COMMENT 'Error eBImagine'
-   )
+   );
 
    /* Moved to CREATE TABLE
 COMMENT ON COLUMN `BNK$ERRORNOTIFY`.`ID` IS 'Codigo interno del sistema' */
@@ -1214,7 +1214,7 @@ COMMENT ON COLUMN `BNK$ERRORNOTIFY`.`ERRORID` IS 'Error eBImagine' */
    (	`ID` DOUBLE COMMENT 'Codigo interno del sistema',
 	`EXCEPTIONDATE` DATETIME COMMENT 'Fecha de excepcion',
 	`TYPEDATE` VARCHAR(1) COMMENT 'Tipo S:Sabado D:Domingo F:Festivo'
-   )
+   );
 
    /* Moved to CREATE TABLE
 COMMENT ON COLUMN `BNK$EXCEPTIONDATE`.`ID` IS 'Codigo interno del sistema' */
@@ -1238,7 +1238,7 @@ COMMENT ON COLUMN `BNK$EXCEPTIONDATE`.`TYPEDATE` IS 'Tipo S:Sabado D:Domingo F:F
 	`STATUS` VARCHAR(2) COMMENT 'Indicador fases de proceso del archivo (CD)argar datos, (PG)rocesando, (PD)rocesado',
 	`MOVEMENTTYPE` VARCHAR(2) COMMENT 'Indicador de contenido en el archivo (CM)ierre movimiento,  (DM)iario movimiento, (TR)eferencia tablas',
 	`MOVEMENTDATE` DATETIME COMMENT 'Fecha de movimiento/referencia contenida en el archivo para carga'
-   )
+   );
 
    /* Moved to CREATE TABLE
 COMMENT ON COLUMN `BNK$FILECONTROL`.`ID` IS 'Codigo interno del sistema' */
@@ -1275,7 +1275,7 @@ COMMENT ON COLUMN `BNK$FILECONTROL`.`MOVEMENTDATE` IS 'Fecha de movimiento/refer
 	`MONTH` DOUBLE,
 	`CLOSETYPE` DOUBLE,
 	`CUSTOMERTYPE` VARCHAR(1)
-   )
+   );
 -- ------------------------------------------------------
 --  DDL for Table BNK$LOG4COLLECT
 -- ------------------------------------------------------
@@ -1290,7 +1290,7 @@ COMMENT ON COLUMN `BNK$FILECONTROL`.`MOVEMENTDATE` IS 'Fecha de movimiento/refer
 	`STATUS` VARCHAR(2) COMMENT 'Orden de generacion de los detalles',
 	`SESSIONID` DOUBLE COMMENT 'Sesion de eBImagine',
 	`ERRORID` DOUBLE COMMENT 'Error de eBImagine'
-   )
+   );
 
    /* Moved to CREATE TABLE
 COMMENT ON COLUMN `BNK$LOG4COLLECT`.`ID` IS 'Codigo interno del sistema' */
@@ -1319,7 +1319,7 @@ COMMENT ON COLUMN `BNK$LOG4COLLECT`.`ERRORID` IS 'Error de eBImagine' */
 	`CODE` VARCHAR(6) COMMENT 'Codigo de Mercadeo',
 	`APLICATIONCODE` VARCHAR(2) COMMENT 'Codigo de la aplicacion que lo utiliza',
 	`DESCRIPTION` VARCHAR(40) COMMENT 'Descripcion del Programa de Mercadeo'
-   )
+   );
 
    /* Moved to CREATE TABLE
 COMMENT ON COLUMN `BNK$MARKEDPROGRAM`.`ID` IS 'Codigo interno del sistema' */
@@ -1340,7 +1340,7 @@ COMMENT ON COLUMN `BNK$MARKEDPROGRAM`.`DESCRIPTION` IS 'Descripcion del Programa
 	`YEAR` DOUBLE COMMENT 'A�o',
 	`MONTH` DOUBLE COMMENT 'A�o Julian',
 	`STATUS` VARCHAR(1) COMMENT 'Estado'
-   )
+   );
 
    /* Moved to CREATE TABLE
 COMMENT ON COLUMN `BNK$MASTERSTORAGE`.`ID` IS 'Codigo interno ebImagine' */
@@ -1362,7 +1362,7 @@ COMMENT ON COLUMN `BNK$MASTERSTORAGE`.`STATUS` IS 'Estado' */
    (	`ID` DOUBLE COMMENT 'Codigo interno ebImagine',
 	`MASTERSTORAGEID` DOUBLE COMMENT 'Area de almacenamiento sistema(bnk$MasterStorage)',
 	`FILECONTROLID` DOUBLE COMMENT 'Archivo control(bnk$FileControl)'
-   )
+   );
 
    /* Moved to CREATE TABLE
 COMMENT ON COLUMN `BNK$MASTERSTORAGEFILECONTROL`.`ID` IS 'Codigo interno ebImagine' */
@@ -1387,7 +1387,7 @@ COMMENT ON COLUMN `BNK$MASTERSTORAGEFILECONTROL`.`FILECONTROLID` IS 'Archivo con
 	`CONCEPT` VARCHAR(50) COMMENT 'Descripcion de la transaccion',
 	`TOTALVALUE` DECIMAL(15,2) COMMENT 'Valor de la transaccion',
 	`PRINT` VARCHAR(1)
-   )
+   );
 
    /* Moved to CREATE TABLE
 COMMENT ON COLUMN `BNK$NOTES`.`ID` IS 'Codigo interno del sistema' */
@@ -1424,7 +1424,7 @@ COMMENT ON COLUMN `BNK$NOTES`.`TOTALVALUE` IS 'Valor de la transaccion' */
 	`LINE` DOUBLE COMMENT 'Numero de linea en la que va el detalle, la primera linea sera 01y la ultima 20.',
 	`DETAIL` VARCHAR(62) COMMENT 'Detalle de la linea la cual debe colocarse en el cuerpo de la nota tal como va sin formateo alguno.',
 	`NOTESID` DOUBLE COMMENT 'Codigo interno de la nota'
-   )
+   );
 
    /* Moved to CREATE TABLE
 COMMENT ON COLUMN `BNK$NOTESDETAIL`.`ID` IS 'Codigo interno del sistema' */
@@ -1452,7 +1452,7 @@ COMMENT ON COLUMN `BNK$NOTESDETAIL`.`NOTESID` IS 'Codigo interno de la nota' */
 	`CODEALT` VARCHAR(8) COMMENT 'Codigo alterno entidad tipo nota.',
 	`NATURE` VARCHAR(1) COMMENT 'Naturaleza nota.',
 	`DESCRIPTION` VARCHAR(50) COMMENT 'Descripcion.'
-   )
+   );
 
    /* Moved to CREATE TABLE
 COMMENT ON COLUMN `BNK$NOTETYPE`.`ID` IS 'Codigo interno(ebImagine).' */
@@ -1473,7 +1473,7 @@ COMMENT ON COLUMN `BNK$NOTETYPE`.`DESCRIPTION` IS 'Descripcion.' */
 	`PRODUCTID` DOUBLE COMMENT 'Codigo del producto',
 	`CODE` VARCHAR(5) COMMENT 'Codigo del bloqueo',
 	`DESCRIPTION` VARCHAR(50) COMMENT 'Descripcion del bloqueo'
-   )
+   );
 
    /* Moved to CREATE TABLE
 COMMENT ON COLUMN `BNK$OBSTRUCT`.`ID` IS 'Codigo interno del sistema' */
@@ -1497,7 +1497,7 @@ COMMENT ON COLUMN `BNK$OBSTRUCT`.`DESCRIPTION` IS 'Descripcion del bloqueo' */
 	`FILESIZE` DOUBLE COMMENT 'Tama�o del pdf',
 	`EQUIPMENT` VARCHAR(50) COMMENT 'Maquina donde queda el pdf generado',
 	`STATUSID` DOUBLE COMMENT 'Estado del PDF (1):Disponible'
-   )
+   );
 
    /* Moved to CREATE TABLE
 COMMENT ON COLUMN `BNK$PDF`.`ID` IS 'Identificador asignado por el sistema' */
@@ -1526,7 +1526,7 @@ COMMENT ON COLUMN `BNK$PDF`.`STATUSID` IS 'Estado del PDF (1):Disponible' */
 	`EQUIPMENT` VARCHAR(50) COMMENT 'Numero del Equipo donde esta los archivos PDF',
 	`USERS` VARCHAR(150) COMMENT 'Usuario FTP o SAMBA',
 	`PASSWORDS` VARCHAR(150) COMMENT 'Password FTP o SAMBA'
-   )
+   );
 
    /* Moved to CREATE TABLE
 COMMENT ON COLUMN `BNK$PDFCONFIGURATION`.`ID` IS 'Codigo interno del sistema' */
@@ -1548,7 +1548,7 @@ COMMENT ON COLUMN `BNK$PDFCONFIGURATION`.`PASSWORDS` IS 'Password FTP o SAMBA' *
 	`SERVICEID` DOUBLE,
 	`PRODUCTID` DOUBLE,
 	`TECHNICALCODE` VARCHAR(34)
-   )
+   );
 -- ------------------------------------------------------
 --  DDL for Table BNK$PDFSPOOL
 -- ------------------------------------------------------
@@ -1560,7 +1560,7 @@ COMMENT ON COLUMN `BNK$PDFCONFIGURATION`.`PASSWORDS` IS 'Password FTP o SAMBA' *
 	`STATUS` VARCHAR(3) COMMENT 'Estado',
 	`YEAR` DOUBLE COMMENT 'A�o',
 	`MONTH` DOUBLE COMMENT 'Mes'
-   )
+   );
 
    /* Moved to CREATE TABLE
 COMMENT ON COLUMN `BNK$PDFSPOOL`.`ID` IS 'Codigo interno del sistema' */
@@ -1582,7 +1582,7 @@ COMMENT ON COLUMN `BNK$PDFSPOOL`.`MONTH` IS 'Mes' */
    (	`ID` DOUBLE COMMENT 'Secuencia EbImagen',
 	`PHONETYPE` DOUBLE COMMENT 'Numero de Tipo de Telefono',
 	`DESCRIPTION` VARCHAR(50) COMMENT 'Nombre del Tipo de Telefono'
-   )
+   );
 
    /* Moved to CREATE TABLE
 COMMENT ON COLUMN `BNK$PHONETYPE`.`ID` IS 'Secuencia EbImagen' */
@@ -1597,7 +1597,7 @@ COMMENT ON COLUMN `BNK$PHONETYPE`.`DESCRIPTION` IS 'Nombre del Tipo de Telefono'
   CREATE TABLE `BNK$PLACESTORE`
    (	`ID` DOUBLE COMMENT 'Codigo interno del sistema',
 	`DESCRIPTION` VARCHAR(40) COMMENT 'Descripcion del origen de transaccion'
-   )
+   );
 
    /* Moved to CREATE TABLE
 COMMENT ON COLUMN `BNK$PLACESTORE`.`ID` IS 'Codigo interno del sistema' */
@@ -1611,7 +1611,7 @@ COMMENT ON COLUMN `BNK$PLACESTORE`.`DESCRIPTION` IS 'Descripcion del origen de t
    (	`ID` DOUBLE,
 	`DESCRIPTION` VARCHAR(64),
 	`CODEACTION` VARCHAR(4)
-   )
+   );
 -- ------------------------------------------------------
 --  DDL for Table BNK$PROCESSDEPEND
 -- ------------------------------------------------------
@@ -1622,7 +1622,7 @@ COMMENT ON COLUMN `BNK$PLACESTORE`.`DESCRIPTION` IS 'Descripcion del origen de t
 	`EXECUTEDATE` DATETIME COMMENT 'Fecha a ejecutar el proceso',
 	`COMMAND` VARCHAR(1024) COMMENT 'Comando de ejecuci�n',
 	`STATUS` VARCHAR(1) COMMENT 'Estado (A = Activo, P = Procesado)'
-   )
+   );
 
    /* Moved to CREATE TABLE
 COMMENT ON COLUMN `BNK$PROCESSDEPEND`.`ID` IS 'Codigo interno del sistema' */
@@ -1643,7 +1643,7 @@ COMMENT ON COLUMN `BNK$PROCESSDEPEND`.`STATUS` IS 'Estado (A = Activo, P = Proce
 	`DATEPROCESSED` DATETIME COMMENT 'Fecha de generaci�n del proceso',
 	`PROCESSID` DOUBLE COMMENT 'Codigo interno del Proceso',
 	`PROCESSINSTANCEID` DOUBLE COMMENT 'Codigo interno de la Instancia del Proceso'
-   )
+   );
 
    /* Moved to CREATE TABLE
 COMMENT ON COLUMN `BNK$PROCESSINSTANCE`.`ID` IS 'Codigo interno del sistema' */
@@ -1663,7 +1663,7 @@ COMMENT ON COLUMN `BNK$PROCESSINSTANCE`.`PROCESSINSTANCEID` IS 'Codigo interno d
 	`DESCRIPTION` VARCHAR(60) COMMENT 'Descripcion del producto',
 	`APPLICATIONID` DOUBLE COMMENT 'Codigo aplicacion',
 	`SYSTEMCODE` VARCHAR(10) COMMENT 'Codigo del sistema'
-   )
+   );
 
    /* Moved to CREATE TABLE
 COMMENT ON COLUMN `BNK$PRODUCT`.`ID` IS 'Codigo interno del sistema' */
@@ -1683,7 +1683,7 @@ COMMENT ON COLUMN `BNK$PRODUCT`.`SYSTEMCODE` IS 'Codigo del sistema' */
    (	`ID` DOUBLE,
 	`SERVICEID` DOUBLE,
 	`ICONOFILENAME` VARCHAR(16)
-   )
+   );
 -- ------------------------------------------------------
 --  DDL for Table BNK$PRWSTATEMENT
 -- ------------------------------------------------------
@@ -1695,11 +1695,11 @@ COMMENT ON COLUMN `BNK$PRODUCT`.`SYSTEMCODE` IS 'Codigo del sistema' */
 	`CLOSETYPE` DOUBLE,
 	`SERVICEID` DOUBLE,
 	`TECHNICALPRODUCT` VARCHAR(34)
-   )
+   );
 -- ------------------------------------------------------
 --  DDL for Table BNK$QUERYDATA
 -- ------------------------------------------------------
-
+/* ERROR
   CREATE GLOBAL TEMPORARY TABLE `BNK$QUERYDATA`
    (	`PROCESSID` DOUBLE,
 	`ORDERDATA` DOUBLE,
@@ -1708,7 +1708,7 @@ COMMENT ON COLUMN `BNK$PRODUCT`.`SYSTEMCODE` IS 'Codigo del sistema' */
 	`NAMECITY` VARCHAR(50),
 	`EMAILADDRESS` VARCHAR(82)
    ) ON COMMIT PRESERVE ROWS;
-
+*/
 
 -- ------------------------------------------------------
 --  DDL for Table BNK$RESCHEDULINGPROCESS
@@ -1720,7 +1720,7 @@ COMMENT ON COLUMN `BNK$PRODUCT`.`SYSTEMCODE` IS 'Codigo del sistema' */
 	`PROCESSJOBSID` DOUBLE COMMENT 'Job a reprogramar',
 	`RESCHEDULINGEACH` DOUBLE COMMENT 'Cada cuanto revisa y se reprograma',
 	`RESCHEDULINGUNTIL` VARCHAR(10) COMMENT 'Hasta que hora se reprograma'
-   )
+   );
 
    /* Moved to CREATE TABLE
 COMMENT ON COLUMN `BNK$RESCHEDULINGPROCESS`.`ID` IS 'Codigo interno del sistema' */
@@ -1740,7 +1740,7 @@ COMMENT ON COLUMN `BNK$RESCHEDULINGPROCESS`.`RESCHEDULINGUNTIL` IS 'Hasta que ho
    (	`ID` DOUBLE COMMENT 'Codigo interno del sistema',
 	`CODE` VARCHAR(2) COMMENT 'Codigo de la causa',
 	`DESCRIPTION` VARCHAR(40) COMMENT 'Descripcion de la causa de devolucion'
-   )
+   );
 
    /* Moved to CREATE TABLE
 COMMENT ON COLUMN `BNK$RETURNCAUSE`.`ID` IS 'Codigo interno del sistema' */
@@ -1761,7 +1761,7 @@ COMMENT ON COLUMN `BNK$RETURNCAUSE`.`DESCRIPTION` IS 'Descripcion de la causa de
 	`SENDPDFID` DOUBLE COMMENT 'Apuntador a maestro bnk$sendpdf',
 	`EXTRACTTYPE` VARCHAR(1) COMMENT 'tipo de extracto (E: extracto, C:consolidado)',
 	`SENDTYPE` VARCHAR(1) COMMENT 'Tipo de Envio(E:electronico, F: Fisico, R:Fisco/Electronico)'
-   )
+   );
 
    /* Moved to CREATE TABLE
 COMMENT ON COLUMN `BNK$SENDDETAILPDF`.`ID` IS 'Identificador asignado por el sistema' */
@@ -1797,7 +1797,7 @@ COMMENT ON COLUMN `BNK$SENDDETAILPDF`.`SENDTYPE` IS 'Tipo de Envio(E:electronico
 	`CLOSETYPE` DOUBLE COMMENT 'Tipo de corte',
 	`BANKTYPE` VARCHAR(1) COMMENT 'Tipo de banca ',
 	`SERVERRUNCOMMANDID` DOUBLE COMMENT 'Origen archivo impresor'
-   )
+   );
 
    /* Moved to CREATE TABLE
 COMMENT ON COLUMN `BNK$SENDPDF`.`ID` IS 'Identificador asignado por el sistema' */
@@ -1834,7 +1834,7 @@ COMMENT ON COLUMN `BNK$SENDPDF`.`SERVERRUNCOMMANDID` IS 'Origen archivo impresor
 	`PRODUCTID` DOUBLE COMMENT 'Codigo del producto',
 	`CODE` VARCHAR(5) COMMENT 'Codigo del estado',
 	`DESCRIPTION` VARCHAR(50) COMMENT 'Descripcion del estado'
-   )
+   );
 
    /* Moved to CREATE TABLE
 COMMENT ON COLUMN `BNK$STATUS`.`ID` IS 'Codigo interno del sistema' */
@@ -1851,7 +1851,7 @@ COMMENT ON COLUMN `BNK$STATUS`.`DESCRIPTION` IS 'Descripcion del estado' */
   CREATE TABLE `BNK$STORELIST`
    (	`ID` DOUBLE,
 	`DESCRIPTION` VARCHAR(128)
-   )
+   );
 -- ------------------------------------------------------
 --  DDL for Table BNK$TPLSERVICEPRINTDETAIL
 -- ------------------------------------------------------
@@ -1862,7 +1862,7 @@ COMMENT ON COLUMN `BNK$STATUS`.`DESCRIPTION` IS 'Descripcion del estado' */
 	`PRINTDETAILID` DOUBLE,
 	`PRINTBLOCK` TINYINT,
 	`PRINTORDER` TINYINT
-   )
+   );
 -- ------------------------------------------------------
 --  DDL for Table BNK$USER
 -- ------------------------------------------------------
@@ -1871,7 +1871,7 @@ COMMENT ON COLUMN `BNK$STATUS`.`DESCRIPTION` IS 'Descripcion del estado' */
    (	`ID` DOUBLE COMMENT 'Codigo interno del sistema',
 	`USERID` DOUBLE COMMENT 'Identificador del usuario',
 	`MAIL` VARCHAR(50) COMMENT 'direccion de correo electronica'
-   )
+   );
 
    /* Moved to CREATE TABLE
 COMMENT ON COLUMN `BNK$USER`.`ID` IS 'Codigo interno del sistema' */
@@ -1897,7 +1897,7 @@ COMMENT ON COLUMN `BNK$USER`.`MAIL` IS 'direccion de correo electronica' */
 	`FROMDATE` DATETIME COMMENT 'Fecha de peticion del archivo',
 	`USERID` DOUBLE COMMENT 'Apuntador a usuario que genera la petici�n',
 	`SOURCE` VARCHAR(1) COMMENT 'Origen de la peticion C:Canales A:Ath'
-   )
+   );
 
    /* Moved to CREATE TABLE
 COMMENT ON COLUMN `BNK$WEBACCESSLOG`.`ID` IS 'Codigo interno del sistema' */
@@ -1941,7 +1941,7 @@ COMMENT ON COLUMN `BNK$WEBACCESSLOG`.`SOURCE` IS 'Origen de la peticion C:Canale
 	`FILESIZE` DOUBLE COMMENT 'Tama�o del pdf',
 	`EQUIPMENT` VARCHAR(50) COMMENT 'Equipo - maquina',
 	`PDFID` DOUBLE COMMENT 'Apuntador a PDF (bnk$pdf)'
-   )
+   );
 
    /* Moved to CREATE TABLE
 COMMENT ON COLUMN `BNK$WEBACCESSLOGDETAIL`.`ID` IS 'Codigo interno del sistema' */
@@ -1980,7 +1980,7 @@ COMMENT ON COLUMN `BNK$WEBACCESSLOGDETAIL`.`PDFID` IS 'Apuntador a PDF (bnk$pdf)
 	`TRANSACTIONSEQUENCE` DOUBLE COMMENT 'Codigo transaccion genera sisema consulta/expide extracto.',
 	`IDENTIFICATIONTYPEID` DOUBLE COMMENT 'Apuntador tipo identificaction.',
 	`PAGES` DOUBLE COMMENT 'Numero paginas contiene pdf consultado'
-   )
+   );
 
    /* Moved to CREATE TABLE
 COMMENT ON COLUMN `BNK$WEBOFFICEACCESSDETAIL`.`ID` IS 'Codigo interno del sistema.' */

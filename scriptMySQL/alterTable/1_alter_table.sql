@@ -210,6 +210,7 @@
 -- ------------------------------------------------------
 --  Ref Constraints for Table ESS$USER
 -- ------------------------------------------------------
-
+/* ERROR
   ALTER TABLE `ESS$USER` ADD CONSTRAINT `ESS$USERCMPANY_F` FOREIGN KEY (`COMPANYID`)
 	  REFERENCES `EBS$COMPANY` (`ID`) ;
+*/
